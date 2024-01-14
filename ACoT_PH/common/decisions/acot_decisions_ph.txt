@@ -1,0 +1,450 @@
+
+# Create Awesome Palace
+decision_acot_upgrade_garrison_1 = {
+	owned_planets_only = yes
+	icon = decision_acot_upgrade_garrison_1
+	
+	enactment_time = 240
+	prerequisites = {
+		tech_planetary_defenses
+	}
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			minerals = 1000
+			energy = 1000
+		}	
+	}
+	
+	potential = {
+		NOR = {
+			has_modifier = acot_modifier_defense_upgrade_1
+			has_modifier = acot_modifier_defense_upgrade_2
+		}
+	}
+	
+	allow = {
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = acot_modifier_defense_upgrade_1
+		}
+		### NORMAL
+		every_planet_army = {
+			limit = {
+				army_type = defense_army
+			}
+			modify_army = {
+				type = acot_defense_army_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_army_dm
+			}
+			modify_army = {
+				type = acot_defense_army_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_army_ae
+			}
+			modify_army = {
+				type = acot_defense_army_light_ae
+			}	
+		}
+		### UNDEAD
+		every_planet_army = {
+			limit = {
+				army_type = undead_defense_army
+			}
+			modify_army = {
+				type = acot_defense_undead_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_undead_dm
+			}
+			modify_army = {
+				type = acot_defense_undead_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_undead_ae
+			}
+			modify_army = {
+				type = acot_defense_undead_light_ae
+			}	
+		}
+		### ROBOT
+		every_planet_army = {
+			limit = {
+				army_type = robotic_defense_army
+			}
+			modify_army = {
+				type = acot_defense_robot_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_robot_dm
+			}
+			modify_army = {
+				type = acot_defense_robot_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_robot_ae
+			}
+			modify_army = {
+				type = acot_defense_robot_light_ae
+			}	
+		}
+		### HIVE
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_1
+			}
+			modify_army = {
+				type = acot_hive_defense_army_light_1
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_dm
+			}
+			modify_army = {
+				type = acot_hive_defense_army_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_ae
+			}
+			modify_army = {
+				type = acot_hive_defense_army_light_ae
+			}	
+		}
+		### OFFSPRING
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_1
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_light_1
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_dm
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_ae
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_light_ae
+			}	
+		}
+		### MACHINE BORG
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense_dm
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense_ae
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_light_ae
+			}	
+		}
+		### MACHINE NORMAL
+		every_planet_army = {
+			limit = {
+				army_type = machine_defense
+			}
+			modify_army = {
+				type = acot_defense_drone_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_drone_dm
+			}
+			modify_army = {
+				type = acot_defense_drone_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_drone_ae
+			}
+			modify_army = {
+				type = acot_defense_drone_light_ae
+			}	
+		}
+		hidden_effect = {
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_acot_upgrade_garrison_2 = {
+	owned_planets_only = yes
+	icon = decision_acot_upgrade_garrison_2
+	
+	enactment_time = 480
+	prerequisites = {
+		tech_global_defense_grid
+	}
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			minerals = 2000
+			energy = 2000
+		}	
+	}
+	
+	potential = {
+		has_modifier = acot_modifier_defense_upgrade_1
+		NOT = {
+			has_modifier = acot_modifier_defense_upgrade_2
+		}
+	}
+	
+	allow = {
+	}
+	
+	effect = {
+		remove_modifier = acot_modifier_defense_upgrade_1
+		add_modifier = {
+			modifier = acot_modifier_defense_upgrade_2
+		}
+		### NORMAL
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_army_light
+			}
+			modify_army = {
+				type = acot_defense_army_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_army_light_dm
+			}
+			modify_army = {
+				type = acot_defense_army_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_army_light_ae
+			}
+			modify_army = {
+				type = acot_defense_army_heavy_ae
+			}	
+		}
+		### UNDEAD
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_undead_light
+			}
+			modify_army = {
+				type = acot_defense_undead_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_undead_light_dm
+			}
+			modify_army = {
+				type = acot_defense_undead_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_undead_light_ae
+			}
+			modify_army = {
+				type = acot_defense_undead_heavy_ae
+			}	
+		}
+		### ROBOT
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_robot_light
+			}
+			modify_army = {
+				type = acot_defense_robot_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_robot_light_dm
+			}
+			modify_army = {
+				type = acot_defense_robot_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_robot_light_ae
+			}
+			modify_army = {
+				type = acot_defense_robot_heavy_ae
+			}	
+		}
+		### HIVE
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_light_1
+			}
+			modify_army = {
+				type = acot_hive_defense_army_heavy_1
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_light_dm
+			}
+			modify_army = {
+				type = acot_hive_defense_army_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_hive_defense_army_light_ae
+			}
+			modify_army = {
+				type = acot_hive_defense_army_heavy_ae
+			}	
+		}
+		### OFFSPRING
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_light_1
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_heavy_1
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_light_dm
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_offspring_defense_army_light_ae
+			}
+			modify_army = {
+				type = acot_offspring_defense_army_heavy_ae
+			}	
+		}
+		### MACHINE BORG
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense_light
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense_light_dm
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_army_machine_cyborg_defense_light_ae
+			}
+			modify_army = {
+				type = acot_army_machine_cyborg_defense_heavy_ae
+			}	
+		}
+		### MACHINE NORMAL
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_drone_light
+			}
+			modify_army = {
+				type = acot_defense_drone_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_drone_light_dm
+			}
+			modify_army = {
+				type = acot_defense_drone_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_defense_drone_light_ae
+			}
+			modify_army = {
+				type = acot_defense_drone_heavy_ae
+			}	
+		}
+		hidden_effect = {
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+		### NO POINT DOING THIS IF THERE IS NO FORT OR IS NOT CAPITAL
+		modifier = {
+			factor = 0
+			OR = {
+				is_capital = no
+				has_fort = no	
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		acot_ph.1
+		acot_ph.2
+		acot_ph.3
+	}
+}

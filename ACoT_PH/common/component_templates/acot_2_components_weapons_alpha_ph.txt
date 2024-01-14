@@ -1,0 +1,1752 @@
+###  DM Missiles
+weapon_component_template = {
+	key = "ACOT_MISSILE_XL_AE"
+	size = extra_large
+	icon = "GFX_ship_part_xl_missile_ae"
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 625 max = 1521 }
+	windup = { min = 1 max = 10 }
+	total_fire_time = 40
+	range = 180
+	min_range = 30
+	accuracy = 1.0
+	missile_speed = 45 # 375 -- apparently, the game doesn't auto-convert speed for non-vanilla components
+	missile_evasion = 0.60
+	missile_health = 50
+	missile_retarget_range = 180
+	power = @xl_ae_power_cost
+	hull_damage = 1.25
+	armor_damage = 1.25
+	armor_penetration = 0.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	tracking = 0.20
+
+	firing_arc = 135.0
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_ae_cost
+			sr_dark_matter = @xl_ae_sr_cost
+			acot_sr_dark_energy = @xl_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @xl_ae_upkeep_energy
+			alloys = @xl_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_xl_missile_ae" }
+	component_set = "ACOT_MISSILE_XL_AE"
+	projectile_gfx = "acot_xl_missile_ae"
+	upgrades_to = "ACOT_MISSILE_XL_PE"
+	tags = { weapon_type_explosive weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+###  DM Missiles
+weapon_component_template = {
+	key = "ACOT_MISSILE_NUKE_AE"
+	size = titanic
+	icon = "GFX_ship_part_nuke_missile_ae"
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 12999 max = 19501 }
+	windup = { min = 100 max = 100 }
+	total_fire_time = 250
+	range = 450
+	min_range = 150
+	accuracy = 1.0
+	missile_speed = 11 # 375 -- apparently, the game doesn't auto-convert speed for non-vanilla components
+	missile_evasion = 0
+	missile_health = 350
+	missile_retarget_range = 150
+	power = @titanic_ae_power_cost
+	hull_damage = 2.00
+	armor_damage = 1.00
+	armor_penetration = 0.0
+	shield_damage = 2.0
+	shield_penetration = 1.0
+	tracking = 0.00
+	size_damage_factor = 3
+
+	firing_arc = 90.0
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_ae_cost
+			sr_dark_matter = @titanic_ae_sr_cost
+			acot_sr_dark_energy = @titanic_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @titanic_ae_upkeep_energy
+			alloys = @titanic_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_missile_nuke_ae" }
+	component_set = "ACOT_MISSILE_NUKE_AE"
+	projectile_gfx = "acot_missile_nuke_ae"
+	upgrades_to = "ACOT_MISSILE_NUKE_PE"
+	tags = { weapon_type_explosive weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes explosive }
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+### AE Lance
+weapon_component_template = {
+	key = "ACOT_PARTICLE_LANCE_AE"
+	size = extra_large
+	icon = "GFX_ship_part_energy_lance_ae"
+	icon_frame = 1	
+	type = instant
+
+	damage = { min = 1318 max = 3296 }
+	windup = { min = 12 max = 47 }
+	total_fire_time = 70
+	range = 150
+	accuracy = 1.00
+	power = @xl_ae_power_cost
+	hull_damage = 1.50
+	armor_penetration = 0.0
+	armor_damage = 2.0
+	shield_penetration = 0.0
+	shield_damage = 0.5
+	tracking = 0.0
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_ae_cost
+			sr_dark_matter = @xl_ae_sr_cost
+			acot_sr_dark_energy = @xl_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @xl_ae_upkeep_energy
+			alloys = @xl_ae_upkeep_alloys
+		}
+	}
+	
+	firing_arc = 25.0
+	use_ship_kill_target = no
+
+	prerequisites = { "tech_energy_lance_ae" }
+	component_set = "ACOT_PARTICLE_LANCE_AE"
+	projectile_gfx = "acot_energy_lance_ae"
+	tags = { weapon_type_energy weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery}
+	upgrades_to = "ACOT_PARTICLE_LANCE_PE"
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+### AE Emitter
+weapon_component_template = {
+	key = "ACOT_ARC_EMITTER_AE"
+	size = extra_large
+	icon = "GFX_ship_part_arc_emitter_ae"
+	icon_frame = 1	
+	type = instant
+
+	damage = { min = 3 max = 2856 }
+	windup = { min = 12 max = 48 }
+	total_fire_time = 71
+	range = 150
+	accuracy = 1.0
+	power = @xl_ae_power_cost
+	hull_damage = 1.25
+	armor_penetration = 1.0
+	armor_damage = 1.25
+	shield_penetration = 1.0
+	shield_damage = 1.00
+	tracking = 0.0
+
+	firing_arc = 25.0
+	min_range = 10
+	use_ship_kill_target = no
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_ae_cost
+			sr_dark_matter = @xl_ae_sr_cost
+			acot_sr_dark_energy = @xl_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @xl_ae_upkeep_energy
+			alloys = @xl_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_arc_emitter_ae" }
+	component_set = "ACOT_ARC_EMITTER_AE"
+	projectile_gfx = "acot_arc_emitter_ae"
+	tags = { weapon_type_energy weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery}
+	upgrades_to = "ACOT_ARC_EMITTER_PE"
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+### AE Giga
+weapon_component_template = {
+	key = "ACOT_MASS_ACCELERATOR_AE"
+	size = extra_large
+	icon = "GFX_ship_part_mass_accelerator_ae"
+	icon_frame = 1	
+	type = instant
+
+    damage = { min = 1538 max = 4394 }
+	windup = { min = 14 max = 54 }
+	total_fire_time = 80
+	range = 175
+	accuracy = 0.75
+	power = @xl_ae_power_cost
+	hull_damage = 1.00
+	armor_penetration = 0.0
+	armor_damage = 1.0
+	shield_penetration = 0.50
+	shield_damage = 2.0
+	tracking = 0.0
+
+	firing_arc = 45.0
+	min_range = 45
+	use_ship_kill_target = no
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_ae_cost
+			sr_dark_matter = @xl_ae_sr_cost
+			acot_sr_dark_energy = @xl_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @xl_ae_upkeep_energy
+			alloys = @xl_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_mass_accelerator_ae" }
+	component_set = "ACOT_MASS_ACCELERATOR_AE"
+	projectile_gfx = "acot_giga_cannon_ae"
+	tags = { weapon_type_kinetic weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery}
+	upgrades_to = "ACOT_MASS_ACCELERATOR_PE"
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+weapon_component_template = {
+	key = "ACOT_PERDITION_BEAM_AE"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	icon = "GFX_ship_part_perdition_beam_ae"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 0.0
+	use_ship_kill_target = no
+	
+	damage = { min = 8450 max = 16900 }
+	windup = { min = 30 max = 120 }
+	total_fire_time = 180
+	range = 250.0
+	accuracy = 1.0
+	hull_damage = 1.50
+	armor_penetration = 0.25
+	armor_damage = 2.0
+	shield_penetration = 0.0
+	shield_damage = 0.75
+	tracking = 0
+	power = @titanic_ae_power_cost
+	
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_ae_cost
+			sr_dark_matter = @titanic_ae_sr_cost
+			acot_sr_dark_energy = @titanic_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @titanic_ae_upkeep_energy
+			alloys = @titanic_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_perdition_beam_ae" }
+	component_set = "ACOT_PERDITION_BEAM_AE"
+	projectile_gfx = "titan_laser_ae"
+	
+	tags = { weapon_type_energy weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+
+	upgrades_to = "ACOT_PERDITION_BEAM_PE"
+}
+
+weapon_component_template = {
+	key = "ACOT_TITAN_EMITTER_AE"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	icon = "GFX_ship_part_titan_emitter_ae"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 15.0
+	use_ship_kill_target = no
+
+	damage = { min = 3211 max = 3211 }
+	windup = { min = 24 max = 48 }
+	total_fire_time = 80
+	range = 275
+	accuracy = 1.0
+	power = -300
+	hull_damage = 2.00
+	armor_penetration = 1.0
+	armor_damage = 1.0
+	shield_penetration = 1.0
+	shield_damage = 1.0
+	tracking = 0.0
+	power = @titanic_ae_power_cost
+	
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_ae_cost
+			sr_dark_matter = @titanic_ae_sr_cost
+			acot_sr_dark_energy = @titanic_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @titanic_ae_upkeep_energy
+			alloys = @titanic_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_titan_emitter_ae" }
+	component_set = "ACOT_TITAN_EMITTER_AE"
+	projectile_gfx = "acot_arc_emitter_ae"
+	
+	tags = { weapon_type_energy weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery }
+	upgrades_to = "ACOT_ARC_EMITTER_PE"
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+weapon_component_template = {
+	key = "ACOT_TITAN_ACCELERATOR_AE"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	icon = "GFX_ship_part_titan_accelerator_ae"
+	icon_frame = 1
+	
+	firing_arc = 45.0
+	min_range = 60.0
+	use_ship_kill_target = no
+	
+	damage = { min = 10985 max = 16055 }
+	windup = { min = 45 max = 90 }
+	total_fire_time = 180
+	range = 300.0
+	accuracy = 1.0
+	power = @titanic_ae_power_cost
+	hull_damage = 1.50
+	armor_penetration = 0.0
+	armor_damage = 1.0
+	shield_penetration = 0.50
+	shield_damage = 2.0
+	tracking = 0
+	
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_ae_cost
+			sr_dark_matter = @titanic_ae_sr_cost
+			acot_sr_dark_energy = @titanic_ae_sr2_cost
+		}		
+		upkeep = {
+			energy = @titanic_ae_upkeep_energy
+			alloys = @titanic_ae_upkeep_alloys
+		}
+	}
+
+	prerequisites = { "tech_titan_accelerator_ae" }
+	component_set = "ACOT_TITAN_ACCELERATOR_AE"
+	projectile_gfx = "acot_giga_cannon_ae"
+	upgrades_to = ACOT_TITAN_ACCELERATOR_PE
+	
+	tags = { weapon_type_kinetic weapon_type_acot_enigmatic }
+	ai_tags = { weapon_role_artillery artillery }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+####################
+# Engimatic Reactors AE
+####################
+
+utility_component_template = {
+	key = "CORVETTE_DARK_MATTER_REACTOR_AE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_ae"
+	icon_frame = 1
+	power = 1200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_dark_matter = 8
+			acot_sr_dark_energy = 8
+		}
+		upkeep = {
+			energy = 0.40
+			alloys = 0.04
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.0
+		ship_armor_reduction = -1.0
+		ship_fire_rate_mult = 0.10
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_ae" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport offspring_corvette }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+	upgrades_to = "CORVETTE_DARK_MATTER_REACTOR_PE"
+}
+
+utility_component_template = {
+	key = "DESTROYER_DARK_MATTER_REACTOR_AE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_ae"
+	icon_frame = 1
+	power = 2400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_dark_matter = 16
+			acot_sr_dark_energy = 16
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.08
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.0
+		ship_armor_reduction = -1.0
+		ship_fire_rate_mult = 0.10
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_ae" }
+	component_set = "power_core"
+	size_restriction = { 
+		destroyer offspring_destroyer
+		fe_escort 
+	}
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+	upgrades_to = "DESTROYER_DARK_MATTER_REACTOR_PE"
+}
+
+utility_component_template = {
+	key = "CRUISER_DARK_MATTER_REACTOR_AE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_ae"
+	icon_frame = 1
+	power = 4800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+			sr_dark_matter = 32
+			acot_sr_dark_energy = 32
+		}
+		upkeep = {
+			energy = 1.6
+			alloys = 0.16
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.0
+		ship_armor_reduction = -1.0
+		ship_fire_rate_mult = 0.10
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_ae" }
+	component_set = "power_core"
+	size_restriction = { 
+		cruiser offspring_cruiser offspring_precursor_escort
+		precursor_escort precursor_platform_m precursor_science precursor_constructor precursor_colonizer precursor_world_shaper
+		military_station_small military_station_medium military_station_large
+		StrikeCruiser supportship rs_support_cruiser rs_ea_cruiser rs_battlecruiser
+	}
+
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+	upgrades_to = "CRUISER_DARK_MATTER_REACTOR_PE"
+	
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_DARK_MATTER_REACTOR_AE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_ae"
+	icon_frame = 1
+	power = 9600
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 320
+			sr_dark_matter = 64
+			acot_sr_dark_energy = 64
+		}
+		upkeep = {
+			energy = 3.2
+			alloys = 0.32
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.0
+		ship_armor_reduction = -1.0
+		ship_fire_rate_mult = 0.10
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_ae" }
+	component_set = "power_core"
+	size_restriction = { 
+		battleship offspring_battleship payback_warship
+		precursor_platform_l precursor_battlecruiser
+		offspring_precursor_battlecruiser
+		fe_battlecruiser SCX_Carrier Battlecruiser
+		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d
+		rs_heavy_dreadnought_type_e rs_heavy_dreadnought_type_f rs_heavy_dreadnought_type_g rs_heavy_dreadnought_type_h
+	}
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR_PE"
+}
+
+utility_component_template = {
+	key = "TITAN_DARK_MATTER_REACTOR_AE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_ae"
+	icon_frame = 1
+	power = 19200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 640
+			sr_dark_matter = 128
+			acot_sr_dark_energy = 128
+		}
+		upkeep = {
+			energy = 6.4
+			alloys = 0.64
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.0
+		ship_armor_reduction = -1.0
+		ship_fire_rate_mult = 0.10
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_ae" }
+	component_set = "power_core"
+	size_restriction = { 
+		titan sofe_gatekeeper_warden 
+		ion_cannon
+		offspring_precursor_assault_carrier
+		precursor_titan precursor_assault_carrier progenitor_carrier precursor_sentinel precursor_guardian
+		Carrier SCX_Dreadnought fe_titan Dreadnought fe_large_station fe_small_station 
+	}
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+	upgrades_to = "TITAN_DARK_MATTER_REACTOR_PE"
+}
+
+########################################
+###  BIONIC Combat Computers    ###
+########################################
+
+utility_component_template = {
+	key = "AE_OFFENSIVE_COMBAT_COMPUTER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_offense"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		fe_escort corvette frigate destroyer StrikeCruiser
+		offspring_corvette offspring_destroyer
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_offense"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER
+
+	prerequisites = { "tech_bionic_interface" }	
+	
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_BALANCE_COMBAT_COMPUTER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_balanced"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		fe_escort corvette frigate destroyer StrikeCruiser
+		offspring_corvette offspring_destroyer
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_balance"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	upgrades_to = SE_BALANCE_COMBAT_COMPUTER
+
+	prerequisites = { "tech_bionic_interface" }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_DEFENSIVE_COMBAT_COMPUTER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_defensive"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		fe_escort corvette frigate destroyer StrikeCruiser
+		offspring_corvette offspring_destroyer
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_defense"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER
+
+	prerequisites = { "tech_bionic_interface" }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "AE_OFFENSIVE_COMBAT_COMPUTER_BATTLECRUISER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_offense"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		explorationship  precursor_escort precursor_battlecruiser fe_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		sofe_ancient_escort cruiser Battlecruiser battleship SCX_Carrier
+		offspring_cruiser offspring_battleship
+		rs_support_cruiser rs_ea_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "origin_offense_bc"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+	
+	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER_BATTLECRUISER
+
+	prerequisites = { "tech_bionic_interface" }	
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_BALANCE_COMBAT_COMPUTER_BATTLECRUISER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_balanced"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		explorationship precursor_escort precursor_battlecruiser fe_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		sofe_ancient_escort cruiser Battlecruiser battleship SCX_Carrier
+		offspring_cruiser offspring_battleship
+		rs_support_cruiser rs_ea_cruiser
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_balance_bc"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+	
+	upgrades_to = SE_BALANCE_COMBAT_COMPUTER_BATTLECRUISER
+
+	prerequisites = { "tech_bionic_interface" }	
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_DEFENSIVE_COMBAT_COMPUTER_BATTLECRUISER"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_defensive"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = {
+		explorationship precursor_escort precursor_battlecruiser fe_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		sofe_ancient_escort cruiser Battlecruiser battleship SCX_Carrier
+		offspring_cruiser offspring_battleship
+		rs_support_cruiser rs_ea_cruiser
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_defense_bc"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+	
+	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER_BATTLECRUISER
+
+	prerequisites = { "tech_bionic_interface" }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "AE_OFFENSIVE_COMBAT_COMPUTER_GOLIATH"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_offense"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	size_restriction = {
+		acot_giga_fortress giga_planet_behemoth juggernaut movable_fortress fe_goliath
+		Carrier dcv Flagship sofe_aegis_guard precursor_assault_carrier progenitor_carrier
+		offspring_precursor_assault_carrier
+		sofe_gatekeeper_warden ultradreadnought progenitor_avatar
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_offense_goliath"
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER_GOLIATH
+	
+	prerequisites = { "tech_bionic_interface" }	
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_BALANCE_COMBAT_COMPUTER_GOLIATH"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_balanced"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	size_restriction = {
+		acot_giga_fortress giga_planet_behemoth juggernaut movable_fortress fe_goliath
+		Carrier dcv Flagship sofe_aegis_guard precursor_assault_carrier progenitor_carrier
+		offspring_precursor_assault_carrier
+		sofe_gatekeeper_warden ultradreadnought progenitor_avatar
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_balance_goliath"
+
+	upgrades_to = SE_BALANCE_COMBAT_COMPUTER_GOLIATH
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	prerequisites = { "tech_bionic_interface" }	
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+utility_component_template = {
+	key = "AE_DEFENSIVE_COMBAT_COMPUTER_GOLIATH"
+	size = small
+	icon = "GFX_ship_part_computer_alpha_defensive"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	size_restriction = {
+		acot_giga_fortress giga_planet_behemoth juggernaut movable_fortress fe_goliath
+		Carrier dcv Flagship sofe_aegis_guard precursor_assault_carrier progenitor_carrier
+		offspring_precursor_assault_carrier
+		sofe_gatekeeper_warden ultradreadnought progenitor_avatar
+	}
+	component_set = "combat_computers"
+	ship_behavior = "origin_defense_goliath"
+	
+	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER_GOLIATH
+
+	modifier = { 
+		ship_weapon_damage = 0.15
+		ship_evasion_mult = 0.15
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+		ship_accuracy_mult = 0.15
+	}
+
+	prerequisites = { "tech_bionic_interface" }
+	
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}
+}
+
+###############################################
+
+######CARRIER######
+
+utility_component_template = {
+	key = "PAC_COMBAT_COMPUTER_DEFENSE_AE"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_defense_ae"
+	icon_frame = 1
+	power = -40
+	class_restriction = { shipclass_military }
+	size_restriction = { precursor_assault_carrier progenitor_carrier offspring_precursor_assault_carrier }
+	component_set = "combat_computers"
+	ship_behavior = "acot_carrier_avoid"
+	prerequisites = { "tech_precursor_assault_carrier" "tech_dm_combat_computer" }
+	
+	upgrades_to = "PAC_COMBAT_COMPUTER_DEFENSE_SE"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			sr_dark_matter = 3
+			acot_sr_dark_energy = 3
+		}
+	}
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+		weapon_type_strike_craft_weapon_damage_mult = 0.25
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.25
+		weapon_type_strike_craft_speed_mult = 0.25
+	}
+	modifier = {
+		ship_hull_mult = 0.10
+	}
+	
+	ai_weight = {
+		weight = 3050
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}	
+}
+
+utility_component_template = {
+	key = "PAC_COMBAT_COMPUTER_OFFENSE_AE"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_offense_ae"
+	icon_frame = 1
+	power = -40
+	class_restriction = { shipclass_military }
+	size_restriction = { precursor_assault_carrier progenitor_carrier offspring_precursor_assault_carrier }
+	component_set = "combat_computers"
+	ship_behavior = "acot_carrier_stationary"
+	prerequisites = {  "tech_precursor_assault_carrier" "tech_dm_combat_computer" }
+	
+	upgrades_to = "PAC_COMBAT_COMPUTER_DEFENSE_SE"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			sr_dark_matter = 3
+			acot_sr_dark_energy = 3
+		}
+	}
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+		weapon_type_strike_craft_weapon_damage_mult = 0.25
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.25
+		weapon_type_strike_craft_speed_mult = 0.25
+	}
+	modifier = {
+		ship_hull_mult = 0.10
+	}
+	
+	ai_weight = {
+		weight = 3050
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}	
+	}	
+}

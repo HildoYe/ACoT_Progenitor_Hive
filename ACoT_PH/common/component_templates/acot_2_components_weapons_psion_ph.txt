@@ -1,0 +1,71 @@
+weapon_component_template = {
+	key = "ACOT_MISSILE_SHROUD_XL"
+	size = extra_large
+	icon = "GFX_ship_part_shroud_missile"
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 1950 max = 3300 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 60
+	range = 250
+	accuracy = 1.0
+	missile_speed = 30 # 375 -- apparently, the game doesn't auto-convert speed for non-vanilla components
+	missile_evasion = 0.20
+	missile_health = 50
+	missile_shield = 200
+	missile_retarget_range = 250
+	power = @xl_ae_power_cost
+
+	target_weights = {
+		battleship = 2
+		precursor_battlecruiser = 2
+		offspring_precursor_battlecruiser = 2
+		fallen_empire_large_warship = 2
+
+		titan = 3
+		juggernaut = 3
+		precursor_assault_carrier = 3
+		offspring_precursor_assault_carrier = 3
+		precursor_titan = 3
+		fallen_empire_massive_warship = 3
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			unity = @xl_ae_cost
+			sr_zro = @xl_ae_sr_cost
+		}		
+		upkeep = {
+			unity = @xl_ae_upkeep_energy
+		}
+	}
+	hull_damage = 2.00
+	armor_damage = 1.00
+	armor_penetration = 1.0
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	tracking = 1.00
+
+	prerequisites = { "tech_shroud_missile" }
+	component_set = "ACOT_MISSILE_SHROUD"
+	projectile_gfx = "acot_missile_psionic_xl"
+	tags = { weapon_type_explosive weapon_type_acot_psionic }
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = sr_zro
+				amount <= 5	
+			}
+			has_monthly_income = {
+				resource = sr_zro
+				value <= 1
+			}		
+		}
+	}
+}

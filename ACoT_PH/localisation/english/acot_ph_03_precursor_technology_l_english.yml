@@ -1,0 +1,65 @@
+﻿l_english:
+
+precursor_escort: "Offspring Precursor Escort"
+precursor_escort_plural: "Offspring Precursor Escorts"
+
+precursor_battlecruiser: "Offspring Precursor Battlecruiser"
+precursor_battlecruiser_plural: "Offspring Precursor Battlecruiser"
+
+precursor_assault_carrier: "Offspring Precursor Assault Carrier"
+precursor_assault_carrier_plural: "Offspring Precursor Assault Carriers"
+
+mod_shipsize_offspring_precursor_escort_hull_add: "Offspring Precursor Escort Hull Point"
+mod_shipsize_offspring_precursor_battlecruiser_hull_add: "Offspring Precursor Battlecruiser Hull Point"
+mod_shipsize_offspring_precursor_assault_carrier_hull_add: "Offspring Precursor Assault Carrier Hull Point"
+
+mod_shipsize_offspring_precursor_escort_build_speed_mult: "Offspring Precursor Escort Build Speed"
+mod_shipsize_offspring_precursor_battlecruiser_build_speed_mult: "Offspring Precursor Battlecruiser Build Speed"
+mod_shipsize_offspring_precursor_assault_carrier_build_speed_mult: "Offspring Precursor Assault Carrier Build Speed"
+
+job_acot_offspring: "Offspring Broodmother"
+job_acot_offspring_plural: "Offspring Broodmothers"
+job_acot_offspring_desc: "Offspring Broodmothers provide necessary care and tending to the spawns of the future."
+mod_job_acot_offspring_add: "$job_acot_offspring$"
+
+################ DEFENSE
+
+acot_hive_offspring_army_1: "Offspring-Led Defender"
+acot_hive_offspring_army_1_plural: "Offspring-Led Defenders"
+acot_hive_offspring_army_1_desc: "Defender-castes are designed to guard the Hive from hostile elements. They are more durable than Predator-castes, but are slower."
+
+acot_hive_offspring_army_dm: "Delta Offspring-Led Defenders"
+acot_hive_offspring_army_dm_plural: "Offspring-Led Defenders"
+acot_hive_offspring_army_dm_desc: "Defender-castes are designed to guard the Hive from hostile elements. They are more durable than Predator-castes, but are slower."
+
+acot_hive_offspring_army_ae: "Alpha Offspring-Led Defender"
+acot_hive_offspring_army_ae_plural: "Alpha Offspring-Led Defenders"
+acot_hive_offspring_army_ae_desc: "Defender-castes are designed to guard the Hive from hostile elements. They are more durable than Predator-castes, but are slower."
+
+##########
+
+acot_hive_offspring_army_light_1: "Offspring-Led Guardian"
+acot_hive_offspring_army_light_1_plural: "Offspring-Led Guardians"
+acot_hive_offspring_army_light_1_desc: "Guardian-castes lead the defenders in defensive battles. Their durable carapaces provide protection against their weaker cousins."
+
+acot_hive_offspring_army_light_dm: "Delta Offspring-Led Guardian"
+acot_hive_offspring_army_light_dm_plural: "Delta Offspring-Led Guardians"
+acot_hive_offspring_army_light_dm_desc: "Guardian-castes lead the defenders in defensive battles. Their durable carapaces provide protection against their weaker cousins."
+
+acot_hive_offspring_army_light_ae: "Alpha Offspring-Led Guardian"
+acot_hive_offspring_army_light_ae_plural: "Offspring-Led Guardians"
+acot_hive_offspring_army_light_ae_desc: "Guardian-castes lead the defenders in defensive battles. Their durable carapaces provide protection against their weaker cousins."
+
+##########
+
+acot_hive_offspring_army_heavy_1: "Offspring-Led Royal Guard"
+acot_hive_offspring_army_heavy_1_plural: "Offspring-Led Royal Guards"
+acot_hive_offspring_army_heavy_1_desc: "Royal Guards emerge only to defend the most important Hive colonies. Their presences alone will scare lesser men to the core."
+
+acot_hive_offspring_army_heavy_dm: "Delta Offspring-Led Royal Guard"
+acot_hive_offspring_army_heavy_dm_plural: "Delta Offspring-Led Royal Guards"
+acot_hive_offspring_army_heavy_dm_desc: "Royal Guards emerge only to defend the most important Hive colonies. Their presences alone will scare lesser men to the core."
+
+acot_hive_offspring_army_heavy_ae: "Alpha Offspring-Led Royal Guard"
+acot_hive_offspring_army_heavy_ae_plural: "Offspring-Led Royal Guards"
+acot_hive_offspring_army_heavy_ae_desc: "Royal Guards emerge only to defend the most important Hive colonies. Their presences alone will scare lesser men to the core."

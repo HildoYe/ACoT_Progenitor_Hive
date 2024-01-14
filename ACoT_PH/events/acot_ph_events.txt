@@ -1,0 +1,90 @@
+namespace = acot_ph
+
+country_event = {
+    id = acot_ph.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+		has_origin = origin_progenitor_hive
+        OR = {
+            last_increased_tech = tech_precursor_escort_delta
+            last_increased_tech = tech_precursor_escort_alpha
+            last_increased_tech = tech_precursor_escort_sigma
+            last_increased_tech = tech_omega_escort
+            last_increased_tech = tech_precursor_escort_cost
+        }
+    }
+
+    immediate = {
+        if = {
+			limit = {
+				last_increased_tech = tech_precursor_escort_cost
+			}
+			shipsize_offspring_precursor_escort_build_speed_mult = 0.25
+			shipsize_offspring_precursor_escort_hull_add = 2000
+		}
+		else = {			
+			shipsize_offspring_precursor_escort_hull_add = 750
+		}
+    }
+}
+
+country_event = {
+    id = acot_ph.2
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+		has_origin = origin_progenitor_hive
+        OR = {
+            last_increased_tech = tech_precursor_bc_delta
+            last_increased_tech = tech_precursor_bc_alpha
+            last_increased_tech = tech_precursor_bc_sigma
+            last_increased_tech = tech_omega_battlecruiser
+            last_increased_tech = tech_precursor_bc_cost
+        }
+    }
+
+    immediate = {
+        if = {
+			limit = {
+				last_increased_tech = tech_precursor_bc_cost
+			}
+			shipsize_offspring_precursor_battlecruiser_build_speed_mult = 0.25
+			shipsize_offspring_precursor_battlecruiser_hull_add = 6000
+		}
+		else = {			
+			shipsize_offspring_precursor_battlecruiser_hull_add = 1250
+		}
+    }
+}
+
+country_event = {
+    id = acot_ph.3
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+		has_origin = origin_progenitor_hive
+        OR = {
+            last_increased_tech = tech_precursor_assault_carrier_alpha
+            last_increased_tech = tech_precursor_assault_carrier_sigma
+            last_increased_tech = tech_omega_carrier
+            last_increased_tech = tech_precursor_assault_carrier_cost
+        }
+    }
+
+    immediate = {
+        if = {
+			limit = {
+				last_increased_tech = tech_precursor_assault_carrier_cost
+			}
+			shipsize_offspring_precursor_battlecruiser_build_speed_mult = 0.25
+			shipsize_offspring_precursor_battlecruiser_hull_add = 25000
+		}
+		else = {			
+			shipsize_offspring_precursor_battlecruiser_hull_add = 3000
+		}
+    }
+}

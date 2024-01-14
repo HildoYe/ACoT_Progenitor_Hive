@@ -1,0 +1,24 @@
+acot_is_precursor_ship = {
+	OR = {
+		is_ship_size = precursor_colossus
+		is_ship_size = precursor_assault_carrier
+		is_ship_size = offspring_precursor_assault_carrier
+		is_ship_size = precursor_battlecruiser
+		is_ship_size = offspring_precursor_battlecruiser
+		is_ship_size = precursor_colonizer
+		is_ship_size = precursor_constructor
+		is_ship_size = precursor_escort
+		is_ship_size = offspring_precursor_escort
+		is_ship_size = precursor_guardian
+		is_ship_size = precursor_platform_l
+		is_ship_size = precursor_platform_m
+		is_ship_size = precursor_science
+		is_ship_size = precursor_sentinel
+		is_ship_size = precursor_titan
+		is_ship_size = precursor_world_shaper
+		is_ship_size = precursor_assault_carrier
+		has_starbase_size >= acot_precusor_starbase
+		has_starbase_size >= acot_precusor_orbital_ring_t1
+		has_starbase_size >= acot_precusor_sigma_starbase
+	}
+}

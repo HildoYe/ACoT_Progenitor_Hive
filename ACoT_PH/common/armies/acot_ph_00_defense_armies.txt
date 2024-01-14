@@ -1,0 +1,669 @@
+acot_offspring_defense_army_1 = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 1.2
+	damage = 0.88
+	has_morale = no
+	morale_damage = 2.08
+	collateral_damage = 0.0
+	war_exhaustion = 0.05
+	icon = GFX_army_type_hive_infantry
+	has_species = yes
+		
+	potential = {
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+}
+
+
+# Defense Armies
+acot_offspring_defense_army_dm = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 2.8
+	damage = 2.04
+	has_morale = no
+	morale_damage = 2.08
+	collateral_damage = 0.0
+	war_exhaustion = 0.05
+	icon = GFX_army_type_hive_infantry
+
+	potential = {
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+				has_active_building = building_giga_fortress
+				has_active_building = building_giga_fortress_fe
+			}
+			num_assigned_jobs = {
+				job = acot_enforcer_drone
+				value >= 1
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+}
+
+acot_offspring_defense_army_ae = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 3.6
+	damage = 2.63
+	has_morale = no
+	morale_damage = 2.08
+	collateral_damage = 0.0
+	war_exhaustion = 0.05
+	icon = GFX_army_type_hive_infantry
+
+	potential = {
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = fe_protector
+					value >= 1
+				}
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+}
+
+###########
+
+# Defense Armies
+acot_offspring_defense_army_light_1 = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 2.8
+	damage = 2.04
+	has_morale = no
+	morale_damage = 2.34
+	collateral_damage = 0.0
+	war_exhaustion = 0.15
+	icon = GFX_army_type_hive_light
+	has_species = yes
+		
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+}
+
+# Defense Armies
+acot_offspring_defense_army_light_dm = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 4.4
+	damage = 3.21
+	has_morale = no
+	morale_damage = 2.34
+	collateral_damage = 0.0
+	war_exhaustion = 0.15
+	icon = GFX_army_type_hive_light
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+				has_active_building = building_giga_fortress
+				has_active_building = building_giga_fortress_fe
+			}
+			num_assigned_jobs = {
+				job = acot_enforcer_drone
+				value >= 1
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+}
+
+acot_offspring_defense_army_light_ae = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 5.2
+	damage = 3.79
+	has_morale = no
+	morale_damage = 2.34
+	collateral_damage = 0.0
+	war_exhaustion = 0.15
+	icon = GFX_army_type_hive_light
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = fe_protector
+					value >= 1
+				}
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+}
+
+###########
+
+# Defense Armies
+acot_offspring_defense_army_heavy_1 = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 7.6
+	damage = 5.54
+	has_morale = no
+	morale_damage = 2.60
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_acot_type_hive_heavy
+	has_species = yes
+		
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+}
+
+# Defense Armies
+acot_offspring_defense_army_heavy_dm = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 9.2
+	damage = 6.71
+	has_morale = no
+	morale_damage = 2.60
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_acot_type_hive_heavy
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+				has_active_building = building_giga_fortress
+				has_active_building = building_giga_fortress_fe
+			}
+			num_assigned_jobs = {
+				job = acot_enforcer_drone
+				value >= 1
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+}
+
+acot_offspring_defense_army_heavy_ae = {
+	use_armynames_from = defense_army
+	defensive = yes
+	is_pop_spawned = yes
+	health = 10
+	damage = 7.29
+	has_morale = no
+	morale_damage = 2.60
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_acot_type_hive_heavy
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = fe_protector
+					value >= 1
+				}
+			}
+		}
+		OR = {
+			AND = {
+				exists = planet.owner.overlord
+				has_holding = {
+					holding = holding_offspring_nest
+					owner = planet.owner.overlord
+				}
+			}
+			AND = {
+				planet.owner = { has_origin = origin_progenitor_hive }
+				OR = {
+					AND = {
+						has_building = building_offspring_nest
+						num_assigned_jobs = {
+							job = offspring_drone
+							value >= 1
+						}
+					}
+					AND = {
+						OR = {
+							has_building = building_fe_hive_pool
+							has_building = building_ae_hive_pool
+						}
+						num_assigned_jobs = {
+							job = acot_offspring
+							value >= 1
+						}
+					}
+					has_deposit = d_progenitor
+				}
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+}

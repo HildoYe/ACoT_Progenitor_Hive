@@ -1,0 +1,87 @@
+namespace = origin
+
+#On Colonize and transfer missing offspring modifier
+planet_event = {
+	id = origin.3225
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_progenitor_hive }
+		NOR = {
+			num_assigned_jobs = {
+				job = offspring_drone
+				value >= 1
+			}
+			num_assigned_jobs = {
+				job = acot_offspring
+				value >= 1
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_modifier = missing_offspring_modifier }
+			}
+			add_modifier = {
+				modifier = missing_offspring_modifier
+				days = -1
+			}
+		}
+	}
+}
+
+#Monthly check to add and remove missing offspring modifier
+country_event = {
+	id = origin.3230
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_progenitor_hive }
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = missing_offspring_modifier
+					num_assigned_jobs = {
+						job = offspring_drone
+						value >= 1
+					}
+					num_assigned_jobs = {
+						job = acot_offspring
+						value >= 1
+					}
+				}
+			}
+			add_modifier = {
+				modifier = missing_offspring_modifier
+				days = -1
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				has_modifier = missing_offspring_modifier
+				OR = {
+					num_assigned_jobs = {
+						job = offspring_drone
+						value >= 1
+					}
+					num_assigned_jobs = {
+						job = acot_offspring
+						value >= 1
+					}
+					has_deposit = d_progenitor
+				}
+
+			}
+			remove_modifier = "missing_offspring_modifier"
+		}
+	}
+}
