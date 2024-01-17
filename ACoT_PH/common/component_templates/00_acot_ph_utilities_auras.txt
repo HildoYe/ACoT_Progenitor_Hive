@@ -3,17 +3,16 @@
 ###################
 
 utility_component_template = {
-	key = "SHIP_AURA_OFFSPRING"
+	key = "SHIP_AURA_OFFSPRING_PRECURSOR"
 	size = medium
 	icon = "GFX_offspring_aura"
 	icon_frame = 1
 	power = 0
 
 	size_restriction = {
-		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_assault_carrier
 	}
-	component_set = "ship_aura_components"
+	component_set = "ship_precursor_offspring_aura_components"
 
 	friendly_aura = {
 		name = "OFFSPRING_AURA"
@@ -28,10 +27,10 @@ utility_component_template = {
 			owner = { has_origin = origin_progenitor_hive }
 		}
 		modifier = {
-			ship_speed_mult = 0.55
-			ship_evasion_mult = 0.55
-			ship_fire_rate_mult = 0.55
-			ship_accuracy_mult = 0.55
+			ship_speed_mult = 0.60
+			ship_evasion_mult = 0.60
+			ship_fire_rate_mult = 0.60
+			ship_accuracy_mult = 0.60
 		}
 
 		graphics = {

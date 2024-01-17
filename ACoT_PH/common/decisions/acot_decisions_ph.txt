@@ -139,10 +139,10 @@ decision_acot_upgrade_garrison_1 = {
 		### OFFSPRING
 		every_planet_army = {
 			limit = {
-				army_type = acot_offspring_defense_army_1
+				army_type = offspring_defense
 			}
 			modify_army = {
-				type = acot_offspring_defense_army_light_1
+				type = acot_offspring_defense_army_light
 			}	
 		}
 		every_planet_army = {
@@ -209,6 +209,56 @@ decision_acot_upgrade_garrison_1 = {
 			}
 			modify_army = {
 				type = acot_defense_drone_light_ae
+			}	
+		}
+		### FANATIC GUARDIAN
+		every_planet_army = {
+			limit = {
+				army_type = fanatic_guardian
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_fanatic_guardian_dm
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_fanatic_guardian_ae
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_light_ae
+			}	
+		}
+		### MACHINE FANATIC GUARDIAN
+		every_planet_army = {
+			limit = {
+				army_type = machine_fanatic_guardian
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_light
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_machine_fanatic_guardian_dm
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_light_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_machine_fanatic_guardian_ae
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_light_ae
 			}	
 		}
 		hidden_effect = {
@@ -360,10 +410,10 @@ decision_acot_upgrade_garrison_2 = {
 		### OFFSPRING
 		every_planet_army = {
 			limit = {
-				army_type = acot_offspring_defense_army_light_1
+				army_type = acot_offspring_defense_army_light
 			}
 			modify_army = {
-				type = acot_offspring_defense_army_heavy_1
+				type = acot_offspring_defense_army_heavy
 			}	
 		}
 		every_planet_army = {
@@ -430,6 +480,56 @@ decision_acot_upgrade_garrison_2 = {
 			}
 			modify_army = {
 				type = acot_defense_drone_heavy_ae
+			}	
+		}
+		### FANATIC GUARDIAN
+		every_planet_army = {
+			limit = {
+				army_type = acot_fanatic_guardian_light
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_fanatic_guardian_light_dm
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_fanatic_guardian_light_ae
+			}
+			modify_army = {
+				type = acot_fanatic_guardian_heavy_ae
+			}	
+		}
+		### MACHINE FANATIC GUARDIAN
+		every_planet_army = {
+			limit = {
+				army_type = acot_machine_fanatic_guardian_light
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_heavy
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_machine_fanatic_guardian_light_dm
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_heavy_dm
+			}	
+		}
+		every_planet_army = {
+			limit = {
+				army_type = acot_machine_fanatic_guardian_light_ae
+			}
+			modify_army = {
+				type = acot_machine_fanatic_guardian_heavy_ae
 			}	
 		}
 		hidden_effect = {

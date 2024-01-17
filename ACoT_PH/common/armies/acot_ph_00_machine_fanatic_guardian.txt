@@ -1,0 +1,582 @@
+machine_fanatic_guardian = {
+	defensive = yes
+	is_pop_spawned = yes
+	health = 2.00
+	damage = 2.40
+	has_morale = no
+	morale_damage = 0.10
+	collateral_damage = 0.0
+	war_exhaustion = 0.20
+	icon = GFX_army_type_machine_infantry
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_dm = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 4.00
+	damage = 4.40
+	has_morale = no
+	morale_damage = 0.10
+	collateral_damage = 0.0
+	war_exhaustion = 0.20
+	icon = GFX_army_type_machine_infantry
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_ae = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 5.00
+	damage = 4.00
+	has_morale = no
+	morale_damage = 2.00
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_machine_infantry
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			NOR = {
+				has_modifier = acot_modifier_defense_upgrade_1
+				has_modifier = acot_modifier_defense_upgrade_2
+			}
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_light = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 4.00
+	damage = 4.40
+	has_morale = no
+	morale_damage = 0.20
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_army_type_machine_defensive
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_light_dm = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 6.00
+	damage = 6.40
+	has_morale = no
+	morale_damage = 0.20
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_army_type_machine_defensive
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_light_ae = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 7.00
+	damage = 7.40
+	has_morale = no
+	morale_damage = 0.20
+	collateral_damage = 0.0
+	war_exhaustion = 0.50
+	icon = GFX_army_type_machine_defensive
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_1
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_heavy = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 10.00
+	damage = 10.40
+	has_morale = no
+	morale_damage = 0.50
+	collateral_damage = 0.0
+	war_exhaustion = 1.50
+	icon = GFX_army_type_machine_heavy
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_heavy_dm = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 12.00
+	damage = 12.40
+	has_morale = no
+	morale_damage = 0.50
+	collateral_damage = 0.0
+	war_exhaustion = 1.50
+	icon = GFX_army_type_machine_heavy
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+			OR = {
+				has_active_building = building_dm_stronghold
+				has_active_building = building_fe_stronghold
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_ascension_perk = ap_synthetic_evolution
+				any_owned_pop = {
+					is_species_class = "ROBOT"
+				}
+			}
+			is_sovereign_guardianship_empire = yes
+		}
+	}
+
+	spawn_chance = {
+		factor = 125
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}
+
+### Machine Empire Armies
+acot_machine_fanatic_guardian_heavy_ae = {
+	use_armynames_from = machine_fanatic_guardian
+	defensive = yes
+	is_pop_spawned = yes
+	health = 13.00
+	damage = 13.40
+	has_morale = no
+	morale_damage = 0.50
+	collateral_damage = 0.0
+	war_exhaustion = 1.50
+	icon = GFX_army_type_machine_heavy
+	has_species = yes
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+		planet = {
+			has_modifier = acot_modifier_defense_upgrade_2
+			OR = {
+				has_active_building = building_ae_stronghold
+				has_active_building = building_giga_fortress_obelisk
+				has_active_building = building_giga_fortress_lab
+				has_active_building = building_giga_fortress_array
+				has_district = district_acot_enigmapolis_fortress
+			}
+			OR = {
+				num_assigned_jobs = {
+					job = acot_enforcer
+					value >= 1
+				}
+				num_assigned_jobs = {
+					job = acot_enforcer_drone
+					value >= 1
+				}
+			}
+			owner = {
+				OR = {
+					has_authority = auth_machine_intelligence
+					has_ascension_perk = ap_synthetic_evolution
+					any_owned_pop = {
+						is_species_class = "ROBOT"
+					}
+				}
+				is_sovereign_guardianship_empire = yes
+			}
+		}
+	}
+
+	spawn_chance = {
+		factor = 130
+	}
+
+	army_modifier = {
+		army_damage_empire_sprawl_penalty_mult = 1
+	}
+}

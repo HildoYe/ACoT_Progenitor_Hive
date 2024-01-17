@@ -1,0 +1,655 @@
+###DELTA####
+
+tech_precursor_escort_delta = {
+	area = engineering
+	cost = @acot_tier7cost3
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 10
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+	modifier = {
+		custom_tooltip = tech_precursor_escort_hull_effect
+		shipsize_precursor_escort_hull_add = 750
+		shipsize_offspring_precursor_escort_hull_add = 1125
+	}
+
+	prerequisites = {
+		tech_precursor_escort
+	}
+
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DELTA_ESCORT_TITLE"
+			desc = "TECH_UNLOCK_DELTA_ESCORT_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_escort_alpha = {
+	area = engineering
+	cost = @acot_tier8cost2
+	tier = 8
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 10
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ALPHA_ESCORT_TITLE"
+			desc = "TECH_UNLOCK_ALPHA_ESCORT_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+	modifier = {
+		custom_tooltip = tech_precursor_escort_hull_effect
+		shipsize_precursor_escort_hull_add = 750
+		shipsize_offspring_precursor_escort_hull_add = 1125
+	}
+
+	prerequisites = {
+		tech_precursor_escort
+		tech_precursor_escort_delta
+		tech_dark_matter_power_core_ae
+		tech_thrusters_ae
+	}
+
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_escort_cost = {
+	area = engineering
+	cost = @acot_tier7cost2
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	icon = tech_precursor_escort_alpha
+	
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_escort_build_speed_effect
+		shipsize_precursor_escort_build_speed_mult = 0.25
+		shipsize_offspring_precursor_escort_build_speed_mult = 0.25
+		shipsize_precursor_escort_hull_add = 2000
+		shipsize_offspring_precursor_escort_hull_add = 3000
+	}
+	
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_escort_sigma = {
+	area = engineering
+	cost = @acot_tier9cost2
+	tier = 9
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 5
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SIGMA_ESCORT_TITLE"
+			desc = "TECH_UNLOCK_SIGMA_ESCORT_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+	modifier = {
+		custom_tooltip = tech_precursor_escort_hull_effect
+		shipsize_precursor_escort_hull_add = 750
+		shipsize_offspring_precursor_escort_hull_add = 1125
+	}
+
+	prerequisites = {
+		tech_precursor_escort
+		tech_precursor_escort_alpha
+		tech_dark_matter_power_core_se
+		tech_stelar_advanced_ships
+	}
+
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_omega_escort = {
+	area = engineering
+	cost = @acot_tier10cost2
+	tier = 10
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_OMEGA_ESCORT_TITLE"
+			desc = "TECH_UNLOCK_OMEGA_ESCORT_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+	modifier = {
+		custom_tooltip = tech_precursor_escort_hull_effect
+		shipsize_precursor_escort_hull_add = 750
+		shipsize_offspring_precursor_escort_hull_add = 1125
+	}
+
+	prerequisites = {
+		tech_precursor_escort
+		tech_dark_matter_power_core_oe
+	}
+
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_bc_delta = {
+	area = engineering
+	cost = @acot_tier7cost3
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 10
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DELTA_BC_TITLE"
+			desc = "TECH_UNLOCK_DELTA_BC_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_battlecruiser_hull_effect
+		shipsize_precursor_battlecruiser_hull_add = 1250
+		shipsize_offspring_precursor_battlecruiser_hull_add = 1875
+	}
+
+
+	prerequisites = {
+		tech_precursor_bc
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_bc_alpha = {
+	area = engineering
+	cost = @acot_tier8cost2
+	tier = 8
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 10
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ALPHA_BC_TITLE"
+			desc = "TECH_UNLOCK_ALPHA_BC_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_battlecruiser_hull_effect
+		shipsize_precursor_battlecruiser_hull_add = 1250
+		shipsize_offspring_precursor_battlecruiser_hull_add = 1875
+	}
+
+
+	prerequisites = {
+		tech_precursor_bc
+		tech_precursor_bc_delta
+		tech_dark_matter_power_core_ae
+		tech_thrusters_ae
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_bc_cost = {
+	area = engineering
+	cost = @acot_tier7cost2
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	icon = tech_precursor_bc_alpha
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_battlecruiser_build_speed_effect
+		shipsize_precursor_battlecruiser_build_speed_mult = 0.25
+		shipsize_offspring_precursor_battlecruiser_build_speed_mult = 0.25
+		shipsize_precursor_battlecruiser_hull_add = 6000
+		shipsize_offspring_precursor_battlecruiser_hull_add = 9000
+	}
+
+	
+	weight_modifier = {
+		factor = 0
+	}
+
+	prerequisites = {
+		tech_precursor_bc
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_bc_sigma = {
+	area = engineering
+	cost = @acot_tier9cost2
+	tier = 9
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 5
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SIGMA_BC_TITLE"
+			desc = "TECH_UNLOCK_SIGMA_BC_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_battlecruiser_hull_effect
+		shipsize_precursor_battlecruiser_hull_add = 1250
+		shipsize_offspring_precursor_battlecruiser_hull_add = 1875
+	}
+
+
+	prerequisites = {
+		tech_precursor_bc
+		tech_precursor_bc_alpha
+		tech_dark_matter_power_core_se
+		tech_thrusters_se
+		tech_stelar_advanced_ships
+	}
+
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_omega_battlecruiser = {
+	area = engineering
+	cost = @acot_tier10cost2
+	tier = 10
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_OMEGA_BATTLECRUISER_TITLE"
+			desc = "TECH_UNLOCK_OMEGA_BATTLECRUISER_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_battlecruiser_hull_effect
+		shipsize_precursor_battlecruiser_hull_add = 1250
+		shipsize_offspring_precursor_battlecruiser_hull_add = 1875
+	}
+
+
+	prerequisites = {
+		tech_precursor_bc
+		tech_dark_matter_power_core_oe
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_assault_carrier_alpha = {
+	area = engineering
+	cost = @acot_tier8cost3
+	tier = 8
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 10
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ALPHA_AC_TITLE"
+			desc = "TECH_UNLOCK_ALPHA_AC_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+
+	modifier = {
+		custom_tooltip = tech_precursor_assault_carrier_hull_effect
+		shipsize_precursor_assault_carrier_hull_add = 3000
+		shipsize_offspring_precursor_assault_carrier_hull_add = 4500
+	}
+
+	prerequisites = {
+		tech_precursor_assault_carrier
+		tech_dark_matter_power_core_ae
+		tech_thrusters_ae
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_assault_carrier_cost = {
+	area = engineering
+	cost = @acot_tier7cost2
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	icon = tech_precursor_assault_carrier_alpha
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+	weight_modifier = {
+		factor = 0
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_assault_carrier_build_speed_effect		
+		shipsize_precursor_assault_carrier_build_speed_mult = 0.25
+		shipsize_offspring_precursor_assault_carrier_build_speed_mult = 0.25
+		shipsize_precursor_assault_carrier_hull_add = 25000
+		shipsize_offspring_precursor_assault_carrier_hull_add = 37500
+	}
+
+	prerequisites = {
+		tech_precursor_assault_carrier
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_assault_carrier_sigma = {
+	area = engineering
+	cost = @acot_tier9cost3
+	tier = 9
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 5
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SIGMA_AC_TITLE"
+			desc = "TECH_UNLOCK_SIGMA_AC_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+	
+
+	modifier = {
+		custom_tooltip = tech_precursor_assault_carrier_hull_effect
+		shipsize_precursor_assault_carrier_hull_add = 3000
+		shipsize_offspring_precursor_assault_carrier_hull_add = 4500
+	}
+
+	prerequisites = {
+		tech_precursor_assault_carrier_alpha
+		tech_dark_matter_power_core_se
+		tech_thrusters_se
+		tech_stelar_advanced_ships
+	}
+
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_omega_carrier = {
+	area = engineering
+	cost = @acot_tier10cost2
+	tier = 10
+	category = { voidcraft }
+	weight = 0
+	is_rare = yes
+	
+	prerequisites = {
+		tech_precursor_assault_carrier
+		tech_precursor_assault_carrier_sigma
+		tech_dark_matter_power_core_oe
+	}
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	modifier = {
+		custom_tooltip = tech_precursor_assault_carrier_hull_effect
+		shipsize_precursor_assault_carrier_hull_add = 3000
+		shipsize_offspring_precursor_assault_carrier_hull_add = 4500
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_OMEGA_CARRIER_TITLE"
+			desc = "TECH_UNLOCK_OMEGA_CARRIER_DESC"
+		}
+	}
+
+
+	
+	ai_weight = {
+		factor = 3 # ship upgrades are supposed to be good!
+	}
+}

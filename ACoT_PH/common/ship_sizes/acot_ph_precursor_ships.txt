@@ -158,7 +158,7 @@ offspring_precursor_escort = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+	required_component_set = "ship_precursor_offspring_aura_components"
 }
 
 offspring_precursor_battlecruiser = {
@@ -256,7 +256,7 @@ offspring_precursor_battlecruiser = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+	required_component_set = "ship_precursor_offspring_aura_components"
 }
 
 offspring_precursor_assault_carrier = {
@@ -340,7 +340,7 @@ offspring_precursor_assault_carrier = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+	required_component_set = "ship_precursor_offspring_aura_components"
 
 	possible_country = {
 		AND = {

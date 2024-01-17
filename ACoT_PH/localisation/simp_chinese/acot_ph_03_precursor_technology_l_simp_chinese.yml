@@ -1,33 +1,33 @@
-﻿l_english:
+﻿l_simp_chinese:
 
-offspring_precursor_escort: "Offspring Precursor Escort"
-offspring_precursor_escort_plural: "Offspring Precursor Escorts"
+offspring_precursor_escort: "子嗣$precursor_escort$"
+offspring_precursor_escort_plural: "子嗣$precursor_escort_plural$"
 
-offspring_precursor_battlecruiser: "Offspring Precursor Battlecruiser"
-offspring_precursor_battlecruiser_plural: "Offspring Precursor Battlecruiser"
+offspring_precursor_battlecruiser: "子嗣$precursor_battlecruiser$"
+offspring_precursor_battlecruiser_plural: "子嗣$precursor_battlecruiser_plural$"
 
-offspring_precursor_assault_carrier: "Offspring Precursor Assault Carrier"
-offspring_precursor_assault_carrier_plural: "Offspring Precursor Assault Carriers"
+offspring_precursor_assault_carrier: "子嗣$precursor_assault_carrier$"
+offspring_precursor_assault_carrier_plural: "子嗣$precursor_assault_carrier_plural$"
 
-mod_shipsize_offspring_precursor_escort_hull_add: "Offspring $mod_shipsize_precursor_escort_hull_add$"
-mod_shipsize_offspring_precursor_battlecruiser_hull_add: "Offspring $mod_shipsize_precursor_battlecruiser_hull_add$"
-mod_shipsize_offspring_precursor_assault_carrier_hull_add: "Offspring $mod_shipsize_precursor_assault_carrier_hull_add$"
+mod_shipsize_offspring_precursor_escort_hull_add: "子嗣$mod_shipsize_precursor_escort_hull_add$"
+mod_shipsize_offspring_precursor_battlecruiser_hull_add: "子嗣$mod_shipsize_precursor_battlecruiser_hull_add$"
+mod_shipsize_offspring_precursor_assault_carrier_hull_add: "子嗣$mod_shipsize_precursor_assault_carrier_hull_add$"
 
-mod_shipsize_offspring_precursor_escort_build_speed_mult: "Offspring $mod_shipsize_precursor_escort_build_speed_mult$"
-mod_shipsize_offspring_precursor_battlecruiser_build_speed_mult: "Offspring $mod_shipsize_precursor_battlecruiser_build_speed_mult$"
-mod_shipsize_offspring_precursor_assault_carrier_build_speed_mult: "Offspring $mod_shipsize_precursor_assault_carrier_build_speed_mult$"
+mod_shipsize_offspring_precursor_escort_build_speed_mult: "子嗣$mod_shipsize_precursor_escort_build_speed_mult$"
+mod_shipsize_offspring_precursor_battlecruiser_build_speed_mult: "子嗣$mod_shipsize_precursor_battlecruiser_build_speed_mult$"
+mod_shipsize_offspring_precursor_assault_carrier_build_speed_mult: "子嗣$mod_shipsize_precursor_assault_carrier_build_speed_mult$"
 
 job_acot_offspring: "Offspring Broodmother"
 job_acot_offspring_plural: "Offspring Broodmothers"
 job_acot_offspring_desc: "Offspring Broodmothers provide necessary care and tending to the spawns of the future."
 mod_job_acot_offspring_add: "$job_acot_offspring$"
 
-tech_precursor_escort_hull_effect: "$mod_shipsize_precursor_escort_hull_add$:§G+750§!" 
-tech_precursor_escort_build_speed_effect: "$mod_shipsize_precursor_escort_build_speed_mult$:§G+25%§!\n$mod_shipsize_precursor_escort_hull_add$:§G+2000§!"
-tech_precursor_battlecruiser_hull_effect: "$mod_shipsize_precursor_battlecruiser_hull_add$:§G+1250§!"
-tech_precursor_battlecruiser_build_speed_effect: "$mod_shipsize_precursor_battlecruiser_build_speed_mult$:§G+25%§!\n$mod_shipsize_precursor_battlecruiser_hull_add$:§G+6000§!"
-tech_precursor_assault_carrier_hull_effect: "$mod_shipsize_precursor_assault_carrier_hull_add$:§G+3000§!"
-tech_precursor_assault_carrier_build_speed_effect: "$mod_shipsize_precursor_assault_carrier_build_speed_mult$:§G+25%§!\n$mod_shipsize_precursor_assault_carrier_hull_add$:§G+25000§!"
+tech_precursor_escort_hull_effect: "$mod_shipsize_precursor_escort_hull_add$：§G+750§!" 
+tech_precursor_escort_build_speed_effect: "$mod_shipsize_precursor_escort_build_speed_mult$：§G+25%§!\n$mod_shipsize_precursor_escort_hull_add$：§G+2000§!"
+tech_precursor_battlecruiser_hull_effect: "$mod_shipsize_precursor_battlecruiser_hull_add$：§G+1250§!"
+tech_precursor_battlecruiser_build_speed_effect: "$mod_shipsize_precursor_battlecruiser_build_speed_mult$：§G+25%§!\n$mod_shipsize_precursor_battlecruiser_hull_add$：§G+6000§!"
+tech_precursor_assault_carrier_hull_effect: "$mod_shipsize_precursor_assault_carrier_hull_add$：§G+3000§!"
+tech_precursor_assault_carrier_build_speed_effect: "$mod_shipsize_precursor_assault_carrier_build_speed_mult$：§G+25%§!\n$mod_shipsize_precursor_assault_carrier_hull_add$：§G+25000§!"
 
 SHIP_AURA_OFFSPRING_PRECURSOR: "$SHIP_AURA_OFFSPRING$"
 ship_precursor_offspring_aura_components: "$ship_aura_components$"
@@ -45,30 +45,30 @@ acot_offspring_defense_army_ae_desc: "$offspring_defense_desc$"
 
 ##########
 
-acot_offspring_defense_army_light_1: "Offspring-Led Guardian"
-acot_offspring_defense_army_light_1_plural: "Offspring-Led Guardians"
-acot_offspring_defense_army_light_1_desc: "$offspring_defense_desc$"
+acot_offspring_defense_army_light: "Offspring-Led Guardian"
+acot_offspring_defense_army_light_plural: "Offspring-Led Guardians"
+acot_offspring_defense_army_light_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_light_dm: "Delta $acot_offspring_defense_army_light_1$"
-acot_offspring_defense_army_light_dm_plural: "Delta $acot_offspring_defense_army_light_1_plural$"
+acot_offspring_defense_army_light_dm: "Delta $acot_offspring_defense_army_light$"
+acot_offspring_defense_army_light_dm_plural: "Delta $acot_offspring_defense_army_light_plural$"
 acot_offspring_defense_army_light_dm_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_light_ae: "Alpha $acot_offspring_defense_army_light_1$"
-acot_offspring_defense_army_light_ae_plural: "Alpha $acot_offspring_defense_army_light_1_plural$"
+acot_offspring_defense_army_light_ae: "Alpha $acot_offspring_defense_army_light$"
+acot_offspring_defense_army_light_ae_plural: "Alpha $acot_offspring_defense_army_light_plural$"
 acot_offspring_defense_army_light_ae_desc: "$offspring_defense_desc$"
 
 ##########
 
-acot_offspring_defense_army_heavy_1: "Offspring-Led Royal Guard"
-acot_offspring_defense_army_heavy_1_plural: "Offspring-Led Royal Guards"
-acot_offspring_defense_army_heavy_1_desc: "$offspring_defense_desc$"
+acot_offspring_defense_army_heavy: "Offspring-Led Royal Guard"
+acot_offspring_defense_army_heavy_plural: "Offspring-Led Royal Guards"
+acot_offspring_defense_army_heavy_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_heavy_dm: "Delta $acot_offspring_defense_army_heavy_1$"
-acot_offspring_defense_army_heavy_dm_plural: "Delta $acot_offspring_defense_army_heavy_1_plural$"
+acot_offspring_defense_army_heavy_dm: "Delta $acot_offspring_defense_army_heavy$"
+acot_offspring_defense_army_heavy_dm_plural: "Delta $acot_offspring_defense_army_heavy_plural$"
 acot_offspring_defense_army_heavy_dm_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_heavy_ae: "Alpha $acot_offspring_defense_army_heavy_1$"
-acot_offspring_defense_army_heavy_ae_plural: "Alpha $acot_offspring_defense_army_heavy_1_plural$"
+acot_offspring_defense_army_heavy_ae: "Alpha $acot_offspring_defense_army_heavy$"
+acot_offspring_defense_army_heavy_ae_plural: "Alpha $acot_offspring_defense_army_heavy_plural$"
 acot_offspring_defense_army_heavy_ae_desc: "$offspring_defense_desc$"
 
 ################ DEFENSE FANATIC GUARDIAN
@@ -83,30 +83,30 @@ acot_fanatic_guardian_ae_desc: "$fanatic_guardian_desc$"
 
 ##########
 
-acot_fanatic_guardian_light_1: "Armored Fanatic Guardian"
-acot_fanatic_guardian_light_1_plural: "Armored Fanatic Guardians"
-acot_fanatic_guardian_light_1_desc: "$fanatic_guardian_desc$"
+acot_fanatic_guardian_light: "Armored Fanatic Guardian"
+acot_fanatic_guardian_light_plural: "Armored Fanatic Guardians"
+acot_fanatic_guardian_light_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_light_dm: "Delta $acot_fanatic_guardian_light_1$"
-acot_fanatic_guardian_light_dm_plural: "Delta $acot_fanatic_guardian_light_1_plural$"
+acot_fanatic_guardian_light_dm: "Delta $acot_fanatic_guardian_light$"
+acot_fanatic_guardian_light_dm_plural: "Delta $acot_fanatic_guardian_light_plural$"
 acot_fanatic_guardian_light_dm_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_light_ae: "Alpha $acot_fanatic_guardian_light_1$"
-acot_fanatic_guardian_light_ae_plural: "Alpha $acot_fanatic_guardian_light_1_plural$"
+acot_fanatic_guardian_light_ae: "Alpha $acot_fanatic_guardian_light$"
+acot_fanatic_guardian_light_ae_plural: "Alpha $acot_fanatic_guardian_light_plural$"
 acot_fanatic_guardian_light_ae_desc: "$fanatic_guardian_desc$"
 
 ##########
 
-acot_fanatic_guardian_heavy_1: "Elite Fanatic Guardian"
-acot_fanatic_guardian_heavy_1_plural: "Elite Fanatic Guardians"
-acot_fanatic_guardian_heavy_1_desc: "$fanatic_guardian_desc$"
+acot_fanatic_guardian_heavy: "Elite Fanatic Guardian"
+acot_fanatic_guardian_heavy_plural: "Elite Fanatic Guardians"
+acot_fanatic_guardian_heavy_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_heavy_dm: "Delta $acot_fanatic_guardian_heavy_1$"
-acot_fanatic_guardian_heavy_dm_plural: "Delta $acot_fanatic_guardian_heavy_1_plural$"
+acot_fanatic_guardian_heavy_dm: "Delta $acot_fanatic_guardian_heavy$"
+acot_fanatic_guardian_heavy_dm_plural: "Delta $acot_fanatic_guardian_heavy_plural$"
 acot_fanatic_guardian_heavy_dm_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_heavy_ae: "Alpha $acot_fanatic_guardian_heavy_1$"
-acot_fanatic_guardian_heavy_ae_plural: "Alpha $acot_fanatic_guardian_heavy_1_plural$"
+acot_fanatic_guardian_heavy_ae: "Alpha $acot_fanatic_guardian_heavy$"
+acot_fanatic_guardian_heavy_ae_plural: "Alpha $acot_fanatic_guardian_heavy_plural$"
 acot_fanatic_guardian_heavy_ae_desc: "$fanatic_guardian_desc$"
 
 ################ DEFENSE MACHINE FANATIC GUARDIAN
@@ -121,30 +121,30 @@ acot_machine_fanatic_guardian_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##########
 
-acot_machine_fanatic_guardian_light_1: "Matrix Sentinel Unit"
-acot_machine_fanatic_guardian_light_1_plural: "Matrix Sentinel Units"
-acot_machine_fanatic_guardian_light_1_desc: "$machine_fanatic_guardian_desc$"
+acot_machine_fanatic_guardian_light: "Matrix Sentinel Unit"
+acot_machine_fanatic_guardian_light_plural: "Matrix Sentinel Units"
+acot_machine_fanatic_guardian_light_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_light_dm: "Delta $acot_machine_fanatic_guardian_light_1$"
-acot_machine_fanatic_guardian_light_dm_plural: "Delta $acot_machine_fanatic_guardian_light_1_plural$"
+acot_machine_fanatic_guardian_light_dm: "Delta $acot_machine_fanatic_guardian_light$"
+acot_machine_fanatic_guardian_light_dm_plural: "Delta $acot_machine_fanatic_guardian_light_plural$"
 acot_machine_fanatic_guardian_light_dm_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_light_ae: "Alpha $acot_machine_fanatic_guardian_light_1$"
-acot_machine_fanatic_guardian_light_ae_plural: "Alpha $acot_machine_fanatic_guardian_light_1_plural$"
+acot_machine_fanatic_guardian_light_ae: "Alpha $acot_machine_fanatic_guardian_light$"
+acot_machine_fanatic_guardian_light_ae_plural: "Alpha $acot_machine_fanatic_guardian_light_plural$"
 acot_machine_fanatic_guardian_light_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##########
 
-acot_machine_fanatic_guardian_heavy_1: "Matrix Core Unit"
-acot_machine_fanatic_guardian_heavy_1_plural: "Matrix Core Units"
-acot_machine_fanatic_guardian_heavy_1_desc: "$machine_fanatic_guardian_desc$"
+acot_machine_fanatic_guardian_heavy: "Matrix Core Unit"
+acot_machine_fanatic_guardian_heavy_plural: "Matrix Core Units"
+acot_machine_fanatic_guardian_heavy_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_heavy_dm: "Delta $acot_machine_fanatic_guardian_heavy_1$"
-acot_machine_fanatic_guardian_heavy_dm_plural: "Delta $acot_machine_fanatic_guardian_heavy_1_plural$"
+acot_machine_fanatic_guardian_heavy_dm: "Delta $acot_machine_fanatic_guardian_heavy$"
+acot_machine_fanatic_guardian_heavy_dm_plural: "Delta $acot_machine_fanatic_guardian_heavy_plural$"
 acot_machine_fanatic_guardian_heavy_dm_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_heavy_ae: "Alpha $acot_machine_fanatic_guardian_heavy_1$"
-acot_machine_fanatic_guardian_heavy_ae_plural: "Alpha $acot_machine_fanatic_guardian_heavy_1_plural$"
+acot_machine_fanatic_guardian_heavy_ae: "Alpha $acot_machine_fanatic_guardian_heavy$"
+acot_machine_fanatic_guardian_heavy_ae_plural: "Alpha $acot_machine_fanatic_guardian_heavy_plural$"
 acot_machine_fanatic_guardian_heavy_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##################################################################################################

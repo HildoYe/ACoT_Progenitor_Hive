@@ -1,7 +1,7 @@
 # Battlecruiser OPERATIONAL
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_BOW_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -42,7 +42,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -96,7 +96,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -144,7 +144,7 @@ ship_section_template = {
 ### MID
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_MID_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_MID_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -190,7 +190,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -240,7 +240,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -280,7 +280,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -350,7 +350,7 @@ ship_section_template = {
 ###STERN
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_STERN_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -386,7 +386,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -426,7 +426,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
+	key = "OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -476,7 +476,7 @@ ship_section_template = {
 ##### ALPHA ###################################################
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_BOW_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -529,7 +529,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -602,7 +602,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -661,7 +661,7 @@ ship_section_template = {
 
 ### MID
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -720,7 +720,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -769,7 +769,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -851,7 +851,7 @@ ship_section_template = {
 ###STERN
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_STERN_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -904,7 +904,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -954,7 +954,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "ALPHA_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
+	key = "ALPHA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -1020,7 +1020,7 @@ ship_section_template = {
 
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_BOW_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1074,7 +1074,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1148,7 +1148,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1208,7 +1208,7 @@ ship_section_template = {
 
 ### MID
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1268,7 +1268,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1318,7 +1318,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1401,7 +1401,7 @@ ship_section_template = {
 ###STERN
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_STERN_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -1455,7 +1455,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -1507,7 +1507,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "STELLAR_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
+	key = "STELLAR_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -1575,7 +1575,7 @@ ship_section_template = {
 
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_BOW_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1627,7 +1627,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1699,7 +1699,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -1757,7 +1757,7 @@ ship_section_template = {
 
 ### MID
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1815,7 +1815,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_ARTILLERY_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1863,7 +1863,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1944,7 +1944,7 @@ ship_section_template = {
 ###STERN
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_STERN_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -1996,7 +1996,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -2046,7 +2046,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PHANON_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
+	key = "PHANON_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -2113,7 +2113,7 @@ ship_section_template = {
 
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_BOW_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_BOW_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = bow
 	should_draw_components = yes
@@ -2157,7 +2157,7 @@ ship_section_template = {
 
 ### MID
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_MID_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -2215,7 +2215,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -2293,7 +2293,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_MID_CARRIER_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -2369,7 +2369,7 @@ ship_section_template = {
 ###STERN
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_LARGE_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -2426,7 +2426,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_STERN_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes
@@ -2494,7 +2494,7 @@ ship_section_template = {
 
 
 ship_section_template = {
-	key = "OMEGA_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
+	key = "OMEGA_OFFSPRING_PRECURSOR_BATTLECRUISER_STERN_TORPEDO_KEY"
 	ship_size = offspring_precursor_battlecruiser
 	fits_on_slot = stern
 	should_draw_components = yes

@@ -1,4 +1,4 @@
-acot_offspring_defense_army_1 = {
+offspring_defense = {
 	use_armynames_from = defense_army
 	defensive = yes
 	is_pop_spawned = yes
@@ -150,7 +150,7 @@ acot_offspring_defense_army_ae = {
 			}
 			OR = {
 				num_assigned_jobs = {
-					job = acot_enforcer
+					job = acot_enforcer_drone
 					value >= 1
 				}
 				num_assigned_jobs = {
@@ -201,7 +201,7 @@ acot_offspring_defense_army_ae = {
 ###########
 
 # Defense Armies
-acot_offspring_defense_army_light_1 = {
+acot_offspring_defense_army_light = {
 	use_armynames_from = defense_army
 	defensive = yes
 	is_pop_spawned = yes
@@ -385,7 +385,7 @@ acot_offspring_defense_army_light_ae = {
 			}
 			OR = {
 				num_assigned_jobs = {
-					job = acot_enforcer
+					job = acot_enforcer_drone
 					value >= 1
 				}
 				num_assigned_jobs = {
@@ -436,7 +436,7 @@ acot_offspring_defense_army_light_ae = {
 ###########
 
 # Defense Armies
-acot_offspring_defense_army_heavy_1 = {
+acot_offspring_defense_army_heavy = {
 	use_armynames_from = defense_army
 	defensive = yes
 	is_pop_spawned = yes
@@ -620,7 +620,7 @@ acot_offspring_defense_army_heavy_ae = {
 			}
 			OR = {
 				num_assigned_jobs = {
-					job = acot_enforcer
+					job = acot_enforcer_drone
 					value >= 1
 				}
 				num_assigned_jobs = {
