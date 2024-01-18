@@ -1,0 +1,15 @@
+namespace = acot_ph
+
+
+# set flag "acot_ph" when the mod is loaded
+# only used to check if this mod exists
+event = {
+	id = acot_ph.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = acot_ph
+	}
+
+}

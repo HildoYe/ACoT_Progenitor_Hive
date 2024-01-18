@@ -1,0 +1,14 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		acot_ph.1	# add the global flag for validating this mod
+	}
+}
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		acot_ph.1	# add the global flag for validating this mod
+	}
+}
