@@ -15,6 +15,7 @@ acot_is_precursor_ship = {
 		is_ship_size = precursor_science
 		is_ship_size = precursor_sentinel
 		is_ship_size = precursor_titan
+		is_ship_size = offspring_precursor_titan
 		is_ship_size = precursor_world_shaper
 		is_ship_size = precursor_assault_carrier
 		has_starbase_size >= acot_precusor_starbase

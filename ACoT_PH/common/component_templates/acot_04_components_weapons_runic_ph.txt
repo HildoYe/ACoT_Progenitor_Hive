@@ -28,6 +28,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -37,6 +38,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -116,6 +118,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -125,6 +128,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -196,6 +200,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -205,6 +210,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -283,6 +289,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -292,6 +299,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -367,6 +375,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -376,6 +385,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -452,6 +462,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -461,6 +472,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -540,6 +552,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -549,6 +562,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -627,6 +641,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -636,6 +651,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -712,6 +728,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -721,6 +738,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -776,6 +794,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -785,6 +804,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -1183,7 +1203,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_re" }
 	component_set = "power_core"
-	size_restriction = { offspring_precursor_assault_carrier }
+	size_restriction = { offspring_precursor_titan offspring_precursor_assault_carrier }
 	
 	ai_weight = {
 		weight = 40
@@ -1550,6 +1570,186 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "origin_defense"
 
+	modifier = { 
+		ship_weapon_damage = 0.25
+		ship_evasion_mult = 0.25
+	}
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+		ship_tracking_add = 25
+		ship_accuracy_mult = 0.25
+	}
+
+	prerequisites = { "tech_computer_runic" }
+	
+	ai_weight = {
+		weight = 40
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}
+	}
+}
+
+utility_component_template = {
+	key = "RE_OFFENSIVE_COMBAT_COMPUTER_TITAN"
+	size = small
+	icon = "GFX_ship_part_computer_phi_offense"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { precursor_titan sofe_ancient_cruiser titan progenitor_titan offspring_precursor_titan }
+	component_set = "combat_computers"
+	ship_behavior = "origin_offense"
+
+	modifier = { 
+		ship_weapon_damage = 0.25
+		ship_evasion_mult = 0.25
+	}
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+		ship_tracking_add = 25
+		ship_accuracy_mult = 0.25
+	}
+	
+	prerequisites = { "tech_computer_runic" }
+	
+	ai_weight = {
+		weight = 40
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}
+	}
+}
+
+utility_component_template = {
+	key = "RE_BALANCE_COMBAT_COMPUTER_TITAN"
+	size = small
+	icon = "GFX_ship_part_computer_phi_balanced"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { precursor_titan sofe_ancient_cruiser titan progenitor_titan offspring_precursor_titan }
+	component_set = "combat_computers"
+	ship_behavior = "origin_balance"
+
+	modifier = { 
+		ship_weapon_damage = 0.25
+		ship_evasion_mult = 0.25
+	}
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+		ship_tracking_add = 25
+		ship_accuracy_mult = 0.25
+	}
+	
+	prerequisites = { "tech_computer_runic" }
+	
+	ai_weight = {
+		weight = 40
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 5
+			}		
+		}
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = acot_sr_dark_energy
+				amount <= 5
+			}
+			has_monthly_income = {
+				resource = acot_sr_dark_energy
+				value <= 2
+			}		
+		}
+	}
+}
+
+utility_component_template = {
+	key = "RE_DEFENSIVE_COMBAT_COMPUTER_TITAN"
+	size = small
+	icon = "GFX_ship_part_computer_phi_defensive"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_dark_matter = 4
+			acot_sr_dark_energy = 4
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { precursor_titan sofe_ancient_cruiser titan progenitor_titan offspring_precursor_titan }
+	component_set = "combat_computers"
+	ship_behavior = "origin_defense"
+	
 	modifier = { 
 		ship_weapon_damage = 0.25
 		ship_evasion_mult = 0.25
@@ -1962,7 +2162,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {
@@ -2059,7 +2259,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {
@@ -2174,7 +2374,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {

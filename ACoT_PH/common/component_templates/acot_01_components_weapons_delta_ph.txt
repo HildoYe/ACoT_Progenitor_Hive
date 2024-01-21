@@ -28,6 +28,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -37,6 +38,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -117,6 +119,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -126,6 +129,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -198,6 +202,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -207,6 +212,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -286,6 +292,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -295,6 +302,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -371,6 +379,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -380,6 +389,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -457,6 +467,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -466,6 +477,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -546,6 +558,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -555,6 +568,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -634,6 +648,7 @@ weapon_component_template = {
 	
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -643,6 +658,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 
@@ -1029,7 +1045,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_dm" }
 	component_set = "power_core"
-	size_restriction = { offspring_precursor_assault_carrier }
+	size_restriction = { offspring_precursor_titan offspring_precursor_assault_carrier }
 	upgrades_to = "TITAN_DARK_MATTER_REACTOR_AE_OFFSPRING"
 	
 	ai_weight = {
@@ -1553,7 +1569,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military }
 	size_restriction = {
 		battleship precursor_battlecruiser SCX_Carrier SCX_Dreadnought
-		offspring_battleship offspring_precursor_battlecruiser
+		offspring_battleship offspring_precursor_battlecruiser offspring_precursor_titan
 		Battlecruiser supportship dcv fe_titan precursor_titan
 		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b
 		rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e
@@ -1615,7 +1631,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military }
 	size_restriction = {
 		battleship precursor_battlecruiser SCX_Carrier SCX_Dreadnought
-		offspring_battleship offspring_precursor_battlecruiser
+		offspring_battleship offspring_precursor_battlecruiser offspring_precursor_titan 
 		Battlecruiser supportship dcv fe_titan precursor_titan
 		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b
 		rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e
@@ -1677,7 +1693,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military }
 	size_restriction = {
 		battleship precursor_battlecruiser SCX_Carrier SCX_Dreadnought
-		offspring_battleship offspring_precursor_battlecruiser
+		offspring_battleship offspring_precursor_battlecruiser offspring_precursor_titan
 		Battlecruiser supportship dcv fe_titan precursor_titan
 		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b
 		rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e
@@ -1739,7 +1755,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military }
 	size_restriction = {
 		battleship precursor_battlecruiser SCX_Carrier SCX_Dreadnought
-		offspring_battleship offspring_precursor_battlecruiser
+		offspring_battleship offspring_precursor_battlecruiser offspring_precursor_titan
 		Battlecruiser supportship dcv fe_titan precursor_titan
 		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b
 		rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e
@@ -2009,7 +2025,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {
@@ -2130,7 +2146,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 
 	ai_weight = {
@@ -2251,7 +2267,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {

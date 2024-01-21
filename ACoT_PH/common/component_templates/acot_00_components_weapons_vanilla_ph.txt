@@ -68,7 +68,7 @@ utility_component_template = {
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	
 	ai_weight = {

@@ -1,5 +1,0 @@
-default = {
-	ship_of_size_limits = {
-		progenitor_precursor_ships_limit
-	}
-}

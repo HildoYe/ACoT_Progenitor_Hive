@@ -50,7 +50,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -231,7 +231,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -410,7 +410,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -559,7 +559,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -734,7 +734,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -917,7 +917,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -1096,7 +1096,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress
@@ -1245,7 +1245,7 @@ strike_craft_component_template = {
 
 	size_restriction = {
 		precursor_escort precursor_battlecruiser precursor_titan precursor_guardian
-		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan
 		precursor_sentinel precursor_platform_m precursor_platform_l
 		acot_precusor_starfortress acot_precusor_starbase acot_precusor_starcitadel
 		acot_precusor_sigma_starbase acot_precusor_sigma_starcitadel acot_precusor_starfortress

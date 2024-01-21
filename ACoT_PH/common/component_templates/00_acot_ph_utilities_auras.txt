@@ -61,7 +61,7 @@ utility_component_template = {
 	power = 0
 
 	size_restriction = {
-		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_assault_carrier
+		offspring_precursor_escort offspring_precursor_battlecruiser offspring_precursor_titan offspring_precursor_assault_carrier
 	}
 	component_set = "ship_offspring_aura_components"
 

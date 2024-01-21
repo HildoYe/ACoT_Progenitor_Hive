@@ -1,12 +1,17 @@
-progenitor_precursor_ships_limit = {
+progenitor_ships_limit = {
 	ship_types = { 
+		offspring_corvette 
+		offspring_destroyer
+		offspring_cruiser
+		offspring_battleship
 		offspring_precursor_escort
 		offspring_precursor_battlecruiser
+		offspring_precursor_titan
 		offspring_precursor_assault_carrier
 	}
 	
 	base = 1
-	max = 400
+	max = 500
 	naval_cap_fraction = 0.1
 	
 	show = {

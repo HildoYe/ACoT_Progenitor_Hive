@@ -19,6 +19,7 @@ weapon_component_template = {
 
 	target_weights = {
 		battleship = 2
+		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
 		fallen_empire_large_warship = 2
@@ -28,6 +29,7 @@ weapon_component_template = {
 		precursor_assault_carrier = 3
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
+		offspring_precursor_titan = 3
 		fallen_empire_massive_warship = 3
 	}
 

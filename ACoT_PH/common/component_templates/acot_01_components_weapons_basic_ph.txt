@@ -83,7 +83,7 @@ utility_component_template = {
 	
 	size_restriction = { 
 		precursor_assault_carrier precursor_titan precursor_sentinel sofe_gatekeeper_warden 
-		offspring_precursor_assault_carrier
+		offspring_precursor_titan offspring_precursor_assault_carrier
 		acot_giga_fortress
 		acot_void_sphere_ship
 		acot_star_overseer
@@ -173,7 +173,10 @@ utility_component_template = {
 		ship_evasion_add = 4
 	}
 	component_set = "thruster_components"
-	size_restriction = { precursor_assault_carrier offspring_precursor_assault_carrier sofe_gatekeeper_warden precursor_titan precursor_colossus }
+	size_restriction = {
+		precursor_assault_carrier sofe_gatekeeper_warden precursor_titan precursor_colossus
+		offspring_precursor_titan offspring_precursor_assault_carrier
+	}
 	upgrades_to = "ACOT_SHIP_THRUSTER_DM"
 	ai_weight = {
 		weight = 1
@@ -188,7 +191,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = -10
 	class_restriction = { shipclass_military }
-	size_restriction = { precursor_assault_carrier offspring_precursor_assault_carrier precursor_titan sofe_gatekeeper_warden precursor_battlecruiser } #fe_goliath
+	size_restriction = {
+		precursor_assault_carrier precursor_titan sofe_gatekeeper_warden precursor_battlecruiser
+		offspring_precursor_titan offspring_precursor_assault_carrier
+	} #fe_goliath
 	component_set = "combat_computers"
 	ship_behavior = "acot_long_range"
 	
@@ -434,7 +440,7 @@ utility_component_template = {
 		ACOT_PRECURSOR_SMALL_CLOAKING_3
 		ACOT_PRECURSOR_SMALL_CLOAKING_DARK_MATTER
 	}
-	size_restriction = { precursor_escort offspring_precursor_escort precursor_battlecruiser offspring_precursor_battlecruiser }
+	size_restriction = { precursor_escort precursor_battlecruiser }
 	prerequisites = { "tech_cloaking_psi" }
 	component_set = "CLOAKING_PSI"
 	ai_tags = {
@@ -501,7 +507,7 @@ utility_component_template = {
 	blocked_by = {
 		ACOT_PRECURSOR_LARGE_CLOAKING_PSI
 	}
-	size_restriction = { precursor_titan precursor_assault_carrier offspring_precursor_assault_carrier }
+	size_restriction = { precursor_titan precursor_assault_carrier offspring_precursor_titan offspring_precursor_assault_carrier }
 	prerequisites = { "tech_cloaking_dark_matter" }
 	component_set = "CLOAKING_DARK_MATTER"
 	ai_tags = {
