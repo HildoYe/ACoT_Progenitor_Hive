@@ -1,0 +1,88 @@
+utility_component_template = {
+	key = "ACOT_DARK_MATTER_SPECIAL_DEFLECTOR"
+	size = aux
+	icon = "GFX_ship_part_dark_matter_shield"
+	icon_frame = 1
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			sr_dark_matter = 5
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "ACOT_DARK_MATTER_SPECIAL_DEFLECTOR"
+	
+	modifier = {
+		ship_armor_mult = 0.20
+		ship_shield_mult = 0.20
+		ship_hull_mult = -0.10
+	}
+
+	blocked_by = {
+		SHIP_AURA_OFFSPRING
+		SHIP_AURA_OFFSPRING_PRECURSOR		
+	}
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 10	
+			}
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}		
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_DARK_MATTER_SPECIAL_DEFLECTOR_OFFSPRING"
+	size = aux
+	icon = "GFX_ship_part_dark_matter_shield"
+	icon_frame = 1
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			sr_dark_matter = 5
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "ACOT_DARK_MATTER_SPECIAL_DEFLECTOR"
+	
+	modifier = {
+		ship_armor_mult = 0.30
+		ship_shield_mult = 0.30
+		ship_hull_mult = -0.15
+	}
+	
+	size_restriction = {
+		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_assault_carrier
+	}
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = sr_dark_matter
+				amount <= 10	
+			}
+			has_monthly_income = {
+				resource = sr_dark_matter
+				value <= 2
+			}		
+		}	
+	}
+}

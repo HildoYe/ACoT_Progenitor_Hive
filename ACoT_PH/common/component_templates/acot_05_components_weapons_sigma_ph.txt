@@ -625,7 +625,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_se" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport offspring_corvette }
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport }
 	
 	ai_weight = {
 		weight = 50
@@ -644,7 +644,56 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "DESTROYER_DARK_MATTER_REACTOR_SE"
+	key = "CORVETTE_DARK_MATTER_REACTOR_SE_OFFSPRING"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_se"
+	icon_frame = 1
+	power = 9600
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			acot_sr_stellarite = 16
+		}
+		upkeep = {
+			energy = 0
+			alloys = 0
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.30
+		ship_weapon_damage = 0.20
+		ship_fire_rate_mult = 0.20
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -2.0
+		ship_armor_reduction = -2.0
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_se" }
+	component_set = "power_core"
+	size_restriction = { offspring_corvette }
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}		
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_DARK_MATTER_REACTOR_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core_se"
 	icon_frame = 1
@@ -663,13 +712,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_dark_matter_power_core_se" }
 	component_set = "power_core"
-	size_restriction = { 
-		destroyer offspring_destroyer
-		fe_escort 
-	}
+	size_restriction = { offspring_destroyer }
 	
 	modifier = { 
-		ship_hull_mult = 0.20
+		ship_hull_mult = 0.30
 		ship_weapon_damage = 0.20
 		ship_fire_rate_mult = 0.20
 	}
@@ -696,7 +742,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "CRUISER_DARK_MATTER_REACTOR_SE"
+	key = "CRUISER_DARK_MATTER_REACTOR_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core_se"
 	icon_frame = 1
@@ -715,15 +761,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_dark_matter_power_core_se" }
 	component_set = "power_core"
-	size_restriction = { 
-		cruiser offspring_cruiser offspring_precursor_escort
-		precursor_escort precursor_platform_m precursor_science precursor_constructor precursor_colonizer precursor_world_shaper
-		military_station_small military_station_medium military_station_large
-		StrikeCruiser supportship rs_support_cruiser rs_ea_cruiser rs_battlecruiser
-	}
+	size_restriction = { offspring_cruiser offspring_precursor_escort }
 	
 	modifier = { 
-		ship_hull_mult = 0.20
+		ship_hull_mult = 0.30
 		ship_weapon_damage = 0.20
 		ship_fire_rate_mult = 0.20
 	}
@@ -750,7 +791,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BATTLESHIP_DARK_MATTER_REACTOR_SE"
+	key = "BATTLESHIP_DARK_MATTER_REACTOR_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core_se"
 	icon_frame = 1
@@ -768,7 +809,7 @@ utility_component_template = {
 	}
 	
 	modifier = { 
-		ship_hull_mult = 0.20
+		ship_hull_mult = 0.30
 		ship_weapon_damage = 0.20
 		ship_fire_rate_mult = 0.20
 	}
@@ -780,14 +821,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_se" }
 	component_set = "power_core"
-	size_restriction = { 
-		battleship offspring_battleship payback_warship
-		precursor_platform_l precursor_battlecruiser 
-		offspring_precursor_battlecruiser
-		fe_battlecruiser SCX_Carrier Battlecruiser
-		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d
-		rs_heavy_dreadnought_type_e rs_heavy_dreadnought_type_f rs_heavy_dreadnought_type_g rs_heavy_dreadnought_type_h
-	}
+	size_restriction = { offspring_battleship offspring_precursor_battlecruiser }
 	
 	ai_weight = {
 		weight = 50	
@@ -806,7 +840,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "TITAN_DARK_MATTER_REACTOR_SE"
+	key = "TITAN_DARK_MATTER_REACTOR_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core_se"
 	icon_frame = 1
@@ -824,7 +858,7 @@ utility_component_template = {
 	}
 	
 	modifier = { 
-		ship_hull_mult = 0.20
+		ship_hull_mult = 0.30
 		ship_weapon_damage = 0.20
 		ship_fire_rate_mult = 0.20
 	}
@@ -836,13 +870,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_se" }
 	component_set = "power_core"
-	size_restriction = { 
-		titan sofe_gatekeeper_warden 
-		ion_cannon
-		offspring_precursor_assault_carrier
-		precursor_titan precursor_assault_carrier progenitor_carrier precursor_sentinel precursor_guardian
-		Carrier SCX_Dreadnought fe_titan Dreadnought fe_large_station fe_small_station 
-	}
+	size_restriction = { offspring_precursor_assault_carrier }
 	
 	ai_weight = {
 		weight = 50	
@@ -1337,13 +1365,13 @@ utility_component_template = {
 ######CARRIER######
 
 utility_component_template = {
-	key = "PAC_COMBAT_COMPUTER_DEFENSE_SE"
+	key = "PAC_COMBAT_COMPUTER_DEFENSE_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_computer_carrier_defense_se"
 	icon_frame = 1
 	power = -80
 	class_restriction = { shipclass_military }
-	size_restriction = { precursor_assault_carrier progenitor_carrier offspring_precursor_assault_carrier }
+	size_restriction = { offspring_precursor_assault_carrier }
 	component_set = "combat_computers"
 	ship_behavior = "acot_carrier_avoid"
 	prerequisites = { "tech_computer_stellarite" "tech_precursor_assault_carrier" }
@@ -1363,7 +1391,7 @@ utility_component_template = {
 		weapon_type_strike_craft_speed_mult = 0.40
 	}
 	modifier = {
-		ship_hull_mult = 0.15
+		ship_hull_mult = 0.225
 	}
 	
 	ai_weight = {
@@ -1383,13 +1411,13 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "PAC_COMBAT_COMPUTER_OFFENSE_SE"
+	key = "PAC_COMBAT_COMPUTER_OFFENSE_SE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_computer_carrier_offense_se"
 	icon_frame = 1
 	power = -80
 	class_restriction = { shipclass_military }
-	size_restriction = { precursor_assault_carrier progenitor_carrier offspring_precursor_assault_carrier }
+	size_restriction = { offspring_precursor_assault_carrier }
 	component_set = "combat_computers"
 	ship_behavior = "acot_carrier_stationary"
 	prerequisites = { "tech_computer_stellarite" "tech_precursor_assault_carrier" }
@@ -1409,11 +1437,308 @@ utility_component_template = {
 		weapon_type_strike_craft_speed_mult = 0.40
 	}
 	modifier = {
-		ship_hull_mult = 0.15
+		ship_hull_mult = 0.225
 	}
 	
 	ai_weight = {
 		weight = 50
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_SE"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_reactive_drone_se"
+	icon_frame = 1
+	power = -640
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			acot_sr_stellarite = 3.5
+		}
+	}
+
+
+	modifier = {
+		ship_hull_mult = 0.6
+		ship_hull_regen_add_perc = 0.06
+		ship_armor_regen_add_perc = 0.06
+	}
+	
+	prerequisites = { tech_darkmatter_reactive_drone_se }
+	component_set = "ACOT_REPAIR_COUNTERMEASURES_SE"
+
+	blocked_by = {
+		SHIP_AURA_OFFSPRING
+		SHIP_AURA_OFFSPRING_PRECURSOR
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}	
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}		
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_SE_OFFSPRING"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_reactive_drone_se"
+	icon_frame = 1
+	power = -640
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			acot_sr_stellarite = 3.5
+		}
+	}
+
+
+	modifier = {
+		ship_hull_mult = 0.9
+		ship_hull_regen_add_perc = 0.06
+		ship_armor_regen_add_perc = 0.06
+	}
+	
+	prerequisites = { tech_darkmatter_reactive_drone_se }
+	component_set = "ACOT_REPAIR_COUNTERMEASURES_SE"
+
+	size_restriction = {
+		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_assault_carrier
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}	
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}		
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_SHIELD_BOOSTER_SE"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_se"
+	icon_frame = 1
+	power = -800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			acot_sr_stellarite = 4.5
+		}
+	}
+
+	prerequisites = { "tech_darkmatter_shield_supercharger_se" }
+	component_set = "ACOT_SHIELD_BOOSTER_SE"
+	
+	modifier = {
+		ship_shield_mult = 0.60
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = 0.60
+	}
+	
+	blocked_by = {
+		SHIP_AURA_OFFSPRING
+		SHIP_AURA_OFFSPRING_PRECURSOR
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_SHIELD_BOOSTER_SE_OFFSPRING"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_se"
+	icon_frame = 1
+	power = -800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			acot_sr_stellarite = 4.5
+		}
+	}
+
+	prerequisites = { "tech_darkmatter_shield_supercharger_se" }
+	component_set = "ACOT_SHIELD_BOOSTER_SE"
+	
+	modifier = {
+		ship_shield_mult = 0.90
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = 0.60
+	}
+	
+	size_restriction = {
+		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_assault_carrier
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_ARMOR_BOOSTER_SE"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_se"
+	icon_frame = 1
+	power = -800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			acot_sr_stellarite = 4.5
+		}
+	}
+	
+	prerequisites = { "tech_darkmatter_armor_supercharger_se" }
+	component_set = "ACOT_ARMOR_BOOSTER_SE"
+	
+	modifier = {
+		ship_armor_mult = 0.60
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = 0.60
+	}
+	
+	blocked_by = {
+		SHIP_AURA_OFFSPRING
+		SHIP_AURA_OFFSPRING_PRECURSOR
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = acot_sr_stellarite
+				amount <= 5	
+			}	
+			has_monthly_income = {
+				resource = acot_sr_stellarite
+				value <= 3
+			}	
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_ARMOR_BOOSTER_SE_OFFSPRING"
+	size = aux
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_se"
+	icon_frame = 1
+	power = -800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			acot_sr_stellarite = 4.5
+		}
+	}
+	
+	prerequisites = { "tech_darkmatter_armor_supercharger_se" }
+	component_set = "ACOT_ARMOR_BOOSTER_SE"
+	
+	modifier = {
+		ship_armor_mult = 0.90
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = 0.60
+	}
+	
+	size_restriction = {
+		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
+		offspring_precursor_escort offspring_precursor_battlecruiser
+		offspring_precursor_assault_carrier
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+		}
 		modifier = {
 			factor = 0
 			has_resource = {
