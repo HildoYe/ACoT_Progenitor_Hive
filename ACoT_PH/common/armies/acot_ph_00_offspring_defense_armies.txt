@@ -618,15 +618,9 @@ acot_offspring_defense_army_heavy_ae = {
 				has_active_building = building_giga_fortress_array
 				has_district = district_acot_enigmapolis_fortress
 			}
-			OR = {
-				num_assigned_jobs = {
-					job = acot_enforcer_drone
-					value >= 1
-				}
-				num_assigned_jobs = {
-					job = fe_protector
-					value >= 1
-				}
+			num_assigned_jobs = {
+				job = acot_enforcer_drone
+				value >= 1
 			}
 		}
 		OR = {

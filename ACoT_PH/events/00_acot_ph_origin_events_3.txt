@@ -85,3 +85,52 @@ country_event = {
 		}
 	}
 }
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+country_event = {
+	id = origin.3260
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_progenitor_hive
+		fromfrom = {
+			OR = {
+				has_component = SHIP_AURA_OFFSPRING
+				has_component = SHIP_AURA_OFFSPRING_PRECURSOR
+			}
+			solar_system = {
+				NOT = {
+					any_ship_in_system = {
+						NOT = {
+							is_same_value = fromfrom
+						}
+						is_owned_by = root
+						OR = {
+							has_component = SHIP_AURA_OFFSPRING
+							has_component = SHIP_AURA_OFFSPRING_PRECURSOR
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		create_message = {
+			type = MESSAGE_FINAL_OFFSPRING_SHIP
+			localization = MESSAGE_FINAL_OFFSPRING_SHIP_DESC
+			days = 30
+			target = fromfrom.solar_system
+			variable = {
+				type = name
+				localization = SYSTEM
+				scope = fromfrom.solar_system
+			}
+		}
+	}
+}

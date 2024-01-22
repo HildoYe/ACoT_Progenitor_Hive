@@ -925,6 +925,55 @@ utility_component_template = {
 }
 
 utility_component_template = {
+	key = "BATTLESHIP_DARK_MATTER_REACTOR_PE"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core_pe"
+	icon_frame = 1
+	power = 19200
+	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR_RE"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 640
+			sr_dark_matter = 64
+			acot_sr_dark_energy = 64
+		}
+		upkeep = {
+			energy = 6.4
+			alloys = 0.64
+		}
+	}
+	
+	modifier = { 
+		ship_hull_mult = 0.10
+		ship_weapon_damage = 0.10
+		ship_fire_rate_mult = 0.10
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -1.25
+		ship_armor_reduction = -1.25
+	}
+
+	prerequisites = { "tech_dark_matter_power_core_pe" }
+	component_set = "power_core"
+	size_restriction = { 
+		battleship payback_warship
+		precursor_platform_l precursor_battlecruiser 
+		fe_battlecruiser SCX_Carrier Battlecruiser
+		rs_dreadnought rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d
+		rs_heavy_dreadnought_type_e rs_heavy_dreadnought_type_f rs_heavy_dreadnought_type_g rs_heavy_dreadnought_type_h
+		ag_science_constructor ag_alpha_psionic_cruiser  # ANCIENT EMPIRE STUFFS
+	}
+	
+	ai_weight = {
+		weight = 35
+	
+	}
+}
+
+utility_component_template = {
 	key = "BATTLESHIP_DARK_MATTER_REACTOR_PE_OFFSPRING"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core_pe"

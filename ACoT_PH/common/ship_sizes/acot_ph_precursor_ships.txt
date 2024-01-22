@@ -131,7 +131,7 @@ offspring_precursor_escort = {
 		}
 	}
 
-	prerequisites = { "tech_precursor_escort" }
+	prerequisites = { "tech_precursor_escort" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
 	
 	possible_country = {
 		AND = {
@@ -211,7 +211,7 @@ offspring_precursor_battlecruiser = {
 
 	base_buildtime = 560
 	
-	prerequisites = { "tech_precursor_bc" }
+	prerequisites = { "tech_precursor_bc" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
 	
 	possible_country = {
 		AND = {
@@ -322,7 +322,7 @@ offspring_precursor_titan = {
 		can_build_precursor_ship = yes
 	}
 
-	prerequisites = { "tech_precursor_titan" }
+	prerequisites = { "tech_precursor_titan" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
 
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
@@ -429,7 +429,7 @@ offspring_precursor_assault_carrier = {
 		}
 	}
 
-	prerequisites = { "tech_precursor_assault_carrier" }
+	prerequisites = { "tech_precursor_assault_carrier" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
 
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
