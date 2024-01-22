@@ -1,0 +1,104 @@
+component_set = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_DM_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_reactive_drone_dm"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_SHIELD_BOOSTER_DM_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_dm"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_ARMOR_BOOSTER_DM_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_dm"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_AE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_reactive_drone_ae"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_SHIELD_BOOSTER_AE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_ae"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_ARMOR_BOOSTER_AE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_ae"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_PE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_reactive_drone_pe"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_SHIELD_BOOSTER_PE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_pe"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_ARMOR_BOOSTER_PE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_pe"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_RE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_reactive_drone_re"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_SHIELD_BOOSTER_RE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_re"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_ARMOR_BOOSTER_RE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_re"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_REPAIR_COUNTERMEASURES_SE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_reactive_drone_se"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_SHIELD_BOOSTER_SE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_shield_supercharger_se"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ACOT_ARMOR_BOOSTER_SE_OFFSPRING"
+	
+	icon = "GFX_ship_part_darkmatter_armor_supercharger_se"
+	icon_frame = 1	
+}

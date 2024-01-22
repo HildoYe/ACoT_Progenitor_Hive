@@ -2167,44 +2167,6 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "ACOT_REPAIR_COUNTERMEASURES_RE"
-	size = aux
-	icon = "GFX_ship_part_darkmatter_reactive_drone_re"
-	icon_frame = 1
-	power = -320
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 60
-			sr_dark_matter = 1
-			acot_sr_dark_energy = 1
-		}
-	}
-
-	modifier = {
-		ship_hull_mult = 0.50
-		ship_hull_regen_add_perc = 0.05
-		ship_armor_regen_add_perc = 0.05
-	}
-	
-	prerequisites = { "tech_darkmatter_reactive_drone_re" }
-	component_set = "ACOT_REPAIR_COUNTERMEASURES_RE"
-
-	blocked_by = {
-		SHIP_AURA_OFFSPRING
-		SHIP_AURA_OFFSPRING_PRECURSOR
-	}
-	
-	ai_weight = {
-		weight = 40
-		modifier = {
-			factor = 2.0
-			is_preferred_weapons = weapon_type_explosive
-		}		
-	}
-}
-
-utility_component_template = {
 	key = "ACOT_REPAIR_COUNTERMEASURES_RE_OFFSPRING"
 	size = aux
 	icon = "GFX_ship_part_darkmatter_reactive_drone_re"
@@ -2226,7 +2188,7 @@ utility_component_template = {
 	}
 	
 	prerequisites = { "tech_darkmatter_reactive_drone_re" }
-	component_set = "ACOT_REPAIR_COUNTERMEASURES_RE"
+	component_set = "ACOT_REPAIR_COUNTERMEASURES_RE_OFFSPRING"
 
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
@@ -2240,63 +2202,6 @@ utility_component_template = {
 			factor = 2.0
 			is_preferred_weapons = weapon_type_explosive
 		}		
-	}
-}
-
-utility_component_template = {
-	key = "ACOT_SHIELD_BOOSTER_RE"
-	size = aux
-	icon = "GFX_ship_part_darkmatter_shield_supercharger_re"
-	icon_frame = 1
-	power = -400
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 60
-			sr_dark_matter = 1
-			acot_sr_dark_energy = 1
-		}
-	}
-	
-	prerequisites = { "tech_darkmatter_shield_supercharger_re" }
-	component_set = "ACOT_SHIELD_BOOSTER_RE"
-	
-	modifier = {
-		ship_shield_mult = 0.50
-	}
-	ship_modifier = {
-		ship_shield_hardening_add = 0.50
-	}	
-	
-	blocked_by = {
-		SHIP_AURA_OFFSPRING
-		SHIP_AURA_OFFSPRING_PRECURSOR
-	}
-
-	ai_weight = {
-		weight = 40
-		modifier = {
-			factor = 0.0
-			has_monthly_income = {
-				resource = sr_dark_matter
-				value <= 2
-			}
-			has_resource = {
-				type = sr_dark_matter
-				amount <= 5
-			}		
-		}
-		modifier = {
-			factor = 0.0
-			has_resource = {
-				type = acot_sr_dark_energy
-				amount <= 5
-			}
-			has_monthly_income = {
-				resource = acot_sr_dark_energy
-				value <= 2
-			}		
-		}
 	}
 }
 
@@ -2316,76 +2221,19 @@ utility_component_template = {
 	}
 	
 	prerequisites = { "tech_darkmatter_shield_supercharger_re" }
-	component_set = "ACOT_SHIELD_BOOSTER_RE"
+	component_set = "ACOT_SHIELD_BOOSTER_RE_OFFSPRING"
 	
 	modifier = {
 		ship_shield_mult = 0.75
 	}
 	ship_modifier = {
 		ship_shield_hardening_add = 0.50
-	}	
+	}
 	
 	size_restriction = {
 		offspring_corvette offspring_destroyer offspring_cruiser offspring_battleship
 		offspring_precursor_escort offspring_precursor_battlecruiser
 		offspring_precursor_titan offspring_precursor_assault_carrier
-	}
-	
-	ai_weight = {
-		weight = 40
-		modifier = {
-			factor = 0.0
-			has_monthly_income = {
-				resource = sr_dark_matter
-				value <= 2
-			}
-			has_resource = {
-				type = sr_dark_matter
-				amount <= 5
-			}		
-		}
-		modifier = {
-			factor = 0.0
-			has_resource = {
-				type = acot_sr_dark_energy
-				amount <= 5
-			}
-			has_monthly_income = {
-				resource = acot_sr_dark_energy
-				value <= 2
-			}		
-		}
-	}
-}
-
-utility_component_template = {
-	key = "ACOT_ARMOR_BOOSTER_RE"
-	size = aux
-	icon = "GFX_ship_part_darkmatter_armor_supercharger_re"
-	icon_frame = 1
-	power = -400
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 30
-			sr_dark_matter = 1
-			acot_sr_dark_energy = 1
-		}
-	}
-	
-	prerequisites = { "tech_darkmatter_armor_supercharger_re" }
-	component_set = "ACOT_ARMOR_BOOSTER_RE"
-	
-	modifier = {
-		ship_armor_mult = 0.50
-	}
-	ship_modifier = {
-		ship_armor_hardening_add = 0.50
-	}
-
-	blocked_by = {
-		SHIP_AURA_OFFSPRING
-		SHIP_AURA_OFFSPRING_PRECURSOR
 	}
 	
 	ai_weight = {
@@ -2431,7 +2279,7 @@ utility_component_template = {
 	}
 	
 	prerequisites = { "tech_darkmatter_armor_supercharger_re" }
-	component_set = "ACOT_ARMOR_BOOSTER_RE"
+	component_set = "ACOT_ARMOR_BOOSTER_RE_OFFSPRING"
 	
 	modifier = {
 		ship_armor_mult = 0.50

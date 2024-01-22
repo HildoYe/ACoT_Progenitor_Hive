@@ -1,0 +1,83 @@
+tech_darkmatter_reactive_drone_se = {
+	area = engineering
+	tier = 8
+	cost = @acot_tier8cost1
+	category = { materials }
+	weight = 5
+	ai_update_type = military
+	is_reverse_engineerable = no
+	prerequisites = { "tech_dark_matter_power_core_se"  "tech_armor_se" }
+	
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		has_technology = tech_dark_matter_power_core_se
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_ACOT_REPAIR_COUNTERMEASURES_SE_TITLE"
+			desc = "TECH_UNLOCK_ACOT_REPAIR_COUNTERMEASURES_SE_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 200		#components are OP
+	}
+}
+
+tech_darkmatter_shield_supercharger_se = {
+	area = physics
+	tier = 8
+	cost = @acot_tier8cost1
+	category = { particles }
+	weight = 5
+	ai_update_type = military
+	is_reverse_engineerable = no
+	prerequisites = { "tech_dark_matter_power_core_se"  "tech_dark_matter_deflector_se" }
+	
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		has_technology = tech_dark_matter_power_core_se
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_ACOT_SHIELD_BOOSTER_SE_TITLE"
+			desc = "TECH_UNLOCK_ACOT_SHIELD_BOOSTER_SE_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 200		#components are OP
+	}
+}
+
+tech_darkmatter_armor_supercharger_se = {
+	area = engineering
+	tier = 8
+	cost = @acot_tier8cost1
+	category = { materials }
+	weight = 5
+	ai_update_type = military
+	is_reverse_engineerable = no
+	prerequisites = { "tech_dark_matter_power_core_se"  "tech_armor_se" }
+	
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		has_technology = tech_dark_matter_power_core_se
+	}
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_ACOT_ARMOR_BOOSTER_SE_TITLE"
+			desc = "TECH_UNLOCK_ACOT_ARMOR_BOOSTER_SE_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 200		#components are OP
+	}
+}
