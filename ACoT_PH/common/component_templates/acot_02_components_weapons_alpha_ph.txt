@@ -679,7 +679,7 @@ weapon_component_template = {
 	prerequisites = { "tech_titan_accelerator_ae" }
 	component_set = "ACOT_TITAN_ACCELERATOR_AE"
 	projectile_gfx = "acot_giga_cannon_ae"
-	upgrades_to = ACOT_TITAN_ACCELERATOR_PE
+	upgrades_to = "ACOT_TITAN_ACCELERATOR_PE"
 	
 	tags = { weapon_type_kinetic weapon_type_acot_enigmatic }
 	ai_tags = { weapon_role_artillery artillery }
@@ -1195,7 +1195,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER
+	upgrades_to = "SE_OFFENSIVE_COMBAT_COMPUTER"
 
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1260,7 +1260,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_BALANCE_COMBAT_COMPUTER
+	upgrades_to = "SE_BALANCE_COMBAT_COMPUTER"
 
 	prerequisites = { "tech_bionic_interface" }
 	
@@ -1324,7 +1324,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER
+	upgrades_to = "SE_DEFENSIVE_COMBAT_COMPUTER"
 
 	prerequisites = { "tech_bionic_interface" }
 	
@@ -1391,7 +1391,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 	
-	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER_BATTLECRUISER
+	upgrades_to = "SE_OFFENSIVE_COMBAT_COMPUTER_BATTLECRUISER"
 
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1458,7 +1458,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 	
-	upgrades_to = SE_BALANCE_COMBAT_COMPUTER_BATTLECRUISER
+	upgrades_to = "SE_BALANCE_COMBAT_COMPUTER_BATTLECRUISER"
 
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1525,7 +1525,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 	
-	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER_BATTLECRUISER
+	upgrades_to = "SE_DEFENSIVE_COMBAT_COMPUTER_BATTLECRUISER"
 
 	prerequisites = { "tech_bionic_interface" }
 	
@@ -1592,7 +1592,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER_TITAN
+	upgrades_to = "SE_OFFENSIVE_COMBAT_COMPUTER_TITAN"
 	
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1659,7 +1659,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_BALANCE_COMBAT_COMPUTER_TITAN
+	upgrades_to = "SE_BALANCE_COMBAT_COMPUTER_TITAN"
 	
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1724,7 +1724,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER_TITAN
+	upgrades_to = "SE_DEFENSIVE_COMBAT_COMPUTER_TITAN"
 
 	prerequisites = { "tech_bionic_interface" }
 	
@@ -1790,7 +1790,7 @@ utility_component_template = {
 		ship_accuracy_mult = 0.15
 	}
 
-	upgrades_to = SE_OFFENSIVE_COMBAT_COMPUTER_GOLIATH
+	upgrades_to = "SE_OFFENSIVE_COMBAT_COMPUTER_GOLIATH"
 	
 	prerequisites = { "tech_bionic_interface" }	
 	
@@ -1843,7 +1843,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "origin_balance_goliath"
 
-	upgrades_to = SE_BALANCE_COMBAT_COMPUTER_GOLIATH
+	upgrades_to = "SE_BALANCE_COMBAT_COMPUTER_GOLIATH"
 
 	modifier = { 
 		ship_weapon_damage = 0.15
@@ -1908,7 +1908,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "origin_defense_goliath"
 	
-	upgrades_to = SE_DEFENSIVE_COMBAT_COMPUTER_GOLIATH
+	upgrades_to = "SE_DEFENSIVE_COMBAT_COMPUTER_GOLIATH"
 
 	modifier = { 
 		ship_weapon_damage = 0.15
