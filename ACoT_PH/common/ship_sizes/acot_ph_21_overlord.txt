@@ -60,12 +60,12 @@ offspring_corvette = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 
 	resources = {
 		category = ships
@@ -139,12 +139,12 @@ offspring_destroyer = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 
 	resources = {
 		category = ships
@@ -222,12 +222,12 @@ offspring_cruiser = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 
 	resources = {
 		category = ships
@@ -284,12 +284,12 @@ offspring_battleship = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 
 	resources = {
 		category = ships

@@ -131,16 +131,21 @@ offspring_precursor_escort = {
 		}
 	}
 
-	prerequisites = { "tech_precursor_escort" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
-	
-	possible_country = {
-		AND = {
-			NOR = {
-				is_country_type = fallen_empire		
-				is_country_type = awakened_fallen_empire
-			}
-			has_origin = origin_progenitor_hive
+	prerequisites = {
+		"tech_precursor_escort"
+		"tech_dark_matter_power_core_dm"
+		"tech_enigmatic_drive_dm"
+		"tech_thrusters_dm"
+		"tech_sensors_dm"
+		"tech_dm_combat_computer"
+	}
+
+	potential_country = {
+		NOR = {
+			is_country_type = fallen_empire		
+			is_country_type = awakened_fallen_empire
 		}
+		has_origin = origin_progenitor_hive
 	}
 
 	ai_ship_data = {
@@ -153,12 +158,12 @@ offspring_precursor_escort = {
 		}
 	}
 
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 }
 
 offspring_precursor_battlecruiser = {
@@ -211,16 +216,21 @@ offspring_precursor_battlecruiser = {
 
 	base_buildtime = 560
 	
-	prerequisites = { "tech_precursor_bc" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
-	
-	possible_country = {
-		AND = {
-			NOR = {
-				is_country_type = fallen_empire		
-				is_country_type = awakened_fallen_empire
-			}
-			has_origin = origin_progenitor_hive
+	prerequisites = {
+		"tech_precursor_bc"
+		"tech_dark_matter_power_core_dm"
+		"tech_enigmatic_drive_dm"
+		"tech_thrusters_dm"
+		"tech_sensors_dm"
+		"tech_dm_combat_computer"
+	}
+
+	potential_country = {
+		NOR = {
+			is_country_type = fallen_empire		
+			is_country_type = awakened_fallen_empire
 		}
+		has_origin = origin_progenitor_hive
 	}
 
 	class = shipclass_military
@@ -251,12 +261,12 @@ offspring_precursor_battlecruiser = {
 		}
 	}
 
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 }
 
 offspring_precursor_titan = {
@@ -322,8 +332,16 @@ offspring_precursor_titan = {
 		can_build_precursor_ship = yes
 	}
 
-	prerequisites = { "tech_precursor_titan" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
+	prerequisites = {
+		"tech_precursor_titan"
+		"tech_dark_matter_power_core_dm"
+		"tech_enigmatic_drive_dm"
+		"tech_thrusters_dm"
+		"tech_sensors_dm"
+		"tech_dm_combat_computer"
+	}
 
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -331,7 +349,6 @@ offspring_precursor_titan = {
 	required_component_set = "combat_computers"
 	required_component_set = "ship_aura_components"
 	required_component_set = "ship_aura_components"
-	required_component_set = "ship_offspring_aura_components"
 
 	ai_ship_data = {
 		fraction = {
@@ -343,14 +360,12 @@ offspring_precursor_titan = {
 		}
 	}
 
-	possible_country = {
-		AND = {
-			NOR = {
-				is_country_type = fallen_empire		
-				is_country_type = awakened_fallen_empire
-			}
-			has_origin = origin_progenitor_hive
+	potential_country = {
+		NOR = {
+			is_country_type = fallen_empire		
+			is_country_type = awakened_fallen_empire
 		}
+		has_origin = origin_progenitor_hive
 	}
 
 }
@@ -429,23 +444,28 @@ offspring_precursor_assault_carrier = {
 		}
 	}
 
-	prerequisites = { "tech_precursor_assault_carrier" "tech_dm_combat_computer" "tech_dark_matter_power_core_dm" "tech_thrusters_dm" }
-
+	prerequisites = {
+		"tech_precursor_assault_carrier"
+		"tech_dark_matter_power_core_dm"
+		"tech_enigmatic_drive_dm"
+		"tech_thrusters_dm"
+		"tech_sensors_dm"
+		"tech_dm_combat_computer"
+	}
+	
+	required_component_set = "ship_offspring_aura_components"
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_offspring_aura_components"
 
-	possible_country = {
-		AND = {
-			NOR = {
-				is_country_type = fallen_empire		
-				is_country_type = awakened_fallen_empire
-			}
-			has_origin = origin_progenitor_hive
+	potential_country = {
+		NOR = {
+			is_country_type = fallen_empire		
+			is_country_type = awakened_fallen_empire
 		}
+		has_origin = origin_progenitor_hive
 	}
 
 }

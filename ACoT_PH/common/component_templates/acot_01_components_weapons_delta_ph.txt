@@ -865,7 +865,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core_dm" }
 	component_set = "power_core"
-	size_restriction = { offspring_destroyer	}
+	size_restriction = { offspring_destroyer }
 	upgrades_to = "DESTROYER_DARK_MATTER_REACTOR_AE_OFFSPRING"
 	
 	ai_weight = {
