@@ -1365,3 +1365,523 @@ strike_craft_component_template = {
 		}
 	}
 }
+
+################## HERCULEAN CORE COMPONENTS
+
+utility_component_template = {
+	key = "ACOT_HERCULEAN_REACTOR"
+	size = large
+	icon = "GFX_ship_part_acot_precursor_reactor"
+	icon_frame = 1
+	power = 250000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			sr_dark_matter = 1200
+			acot_sr_dark_energy = 1200
+		}
+		upkeep = {
+			sr_dark_matter = 12
+			acot_sr_dark_energy = 12
+		}
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -2
+		ship_armor_reduction = -2
+		ship_disengage_chance_reduction = -2
+		ship_emergency_ftl_min_days_mult = -2
+		ship_speed_reduction = -2
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			owner = {
+				has_origin = origin_progenitor_hive
+			}
+		}
+		modifier = {
+			ship_speed_mult = 0.50
+			ship_evasion_mult = 0.50
+			ship_fire_rate_mult = 0.50
+			ship_accuracy_mult = 0.50
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_reactor_dot"
+		radius = 100
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_reactor_dot
+			priority = 5
+		}
+		
+		damage_per_day = {
+			accuracy = 1.0
+			damage = { min = 100 max = 200 }
+			shield_penetration = 0
+			armor_penetration = 0
+			shield_damage = 1
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+
+	component_set = "ACOT_HERCULEAN_REACTOR"
+	upgrades_to = ACOT_HERCULEAN_REACTOR_E7
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_HERCULEAN_REACTOR_E7"
+	size = large
+	icon = "GFX_ship_part_acot_precursor_reactor_e7"
+	icon_frame = 1
+	power = 500000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			sr_dark_matter = 1200
+			acot_sr_dark_energy = 1200
+		}
+		upkeep = {
+			sr_dark_matter = 12
+			acot_sr_dark_energy = 12
+		}
+	}
+
+	prerequisites = { tech_acot_precursor_herculean_component }
+
+	component_set = "ACOT_HERCULEAN_REACTOR"
+
+	ship_modifier = {
+		ship_shield_reduction = -2
+		ship_armor_reduction = -2
+		ship_disengage_chance_reduction = -2
+		ship_emergency_ftl_min_days_mult = -2
+		ship_speed_reduction = -2
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			owner = {
+				has_origin = origin_progenitor_hive
+			}
+		}
+		modifier = {
+			ship_speed_mult = 0.50
+			ship_evasion_mult = 0.50
+			ship_fire_rate_mult = 0.50
+			ship_accuracy_mult = 0.50
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_reactor_dot"
+		radius = 100
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_reactor_dot
+			priority = 5
+		}
+		
+		damage_per_day = {
+			accuracy = 1.0
+			damage = { min = 250 max = 500 }
+			shield_penetration = 0
+			armor_penetration = 0
+			shield_damage = 1
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_computer_debuff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_debuff
+			priority = 5
+		}
+		
+		modifier = {
+			ship_armor_penetration_mult = -0.5
+			ship_shield_penetration_mult = -0.5
+			ship_weapon_damage = -0.25
+			ship_evasion_mult = -0.25
+			ship_base_speed_mult = -0.50
+			ship_tracking_mult = -0.25
+			ship_accuracy_mult = -0.25
+			ship_weapon_range_mult = -0.25
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "acot_aura_herculean_computer_buff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_buff
+			priority = 5
+		}
+		
+		modifier = {
+			ship_shield_mult = 0.25
+			ship_armor_mult = 0.25
+			ship_shield_reduction = -0.5
+			ship_armor_reduction = -0.5
+			ship_evasion_mult = 0.25
+			ship_base_speed_mult = 0.25
+			ship_ftl_jumpdrive_range_mult = 1.00
+			ship_tracking_mult = 0.25
+			ship_accuracy_mult = 0.25
+			ship_weapon_range_mult = 0.25
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_HERCULEAN_REACTOR_S7"
+	size = large
+	icon = "GFX_ship_part_acot_precursor_reactor_s7"
+	icon_frame = 1
+	power = 1500000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			acot_sr_stellarite = 5000
+		}
+		upkeep = {
+			acot_sr_stellarite = 50
+		}
+	}
+
+	ship_modifier = {
+		ship_shield_reduction = -3
+		ship_armor_reduction = -3
+		ship_disengage_chance_reduction = -3
+		ship_emergency_ftl_min_days_mult = -3
+		ship_speed_reduction = -3
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			owner = {
+				has_origin = origin_progenitor_hive
+			}
+		}
+		modifier = {
+			ship_speed_mult = 0.50
+			ship_evasion_mult = 0.50
+			ship_fire_rate_mult = 0.50
+			ship_accuracy_mult = 0.50
+		}
+	}
+
+	prerequisites = { tech_acot_precursor_herculean_component_s7 }
+
+	component_set = "ACOT_HERCULEAN_REACTOR"
+
+
+	hostile_aura = {
+		name = "acot_aura_herculean_reactor_dot"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_reactor_dot
+			priority = 7
+		}
+		
+		damage_per_day = {
+			accuracy = 1.0
+			damage = { min = 400 max = 800 }
+			shield_penetration = 0
+			armor_penetration = 0
+			shield_damage = 1
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_computer_debuff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_debuff
+			priority = 7
+		}
+		
+		modifier = {
+			ship_armor_penetration_mult = -0.60
+			ship_shield_penetration_mult = -0.60
+			ship_weapon_damage = -0.40
+			ship_evasion_mult = -0.40
+			ship_base_speed_mult = -0.60
+			ship_tracking_mult = -0.40
+			ship_accuracy_mult = -0.40
+			ship_weapon_range_mult = -0.40
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "acot_aura_herculean_computer_buff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_buff
+			priority = 7
+		}
+		
+		modifier = {
+			ship_shield_mult = 0.35
+			ship_armor_mult = 0.35
+			ship_shield_reduction = -0.75
+			ship_armor_reduction = -0.75
+			ship_evasion_mult = 0.35
+			ship_base_speed_mult = 0.35
+			ship_ftl_jumpdrive_range_mult = 1.50
+			ship_tracking_mult = 0.35
+			ship_accuracy_mult = 0.35
+			ship_weapon_range_mult = 0.35
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "ACOT_HERCULEAN_REACTOR_S8"
+	size = large
+	icon = "GFX_ship_part_acot_precursor_reactor_s8"
+	icon_frame = 1
+	power = 100000000
+	resources = {
+		category = ship_components
+		cost = {
+			acot_sr_light_matter = 2500
+		}
+		upkeep = {
+		}
+	}
+
+	prerequisites = { tech_omega_colossus }
+
+	component_set = "ACOT_HERCULEAN_REACTOR"
+
+	ship_modifier = {
+		ship_shield_reduction = -3
+		ship_armor_reduction = -3
+		ship_disengage_chance_reduction = -3
+		ship_emergency_ftl_min_days_mult = -3
+		ship_speed_reduction = -3
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			owner = {
+				has_origin = origin_progenitor_hive
+			}
+		}
+		modifier = {
+			ship_speed_mult = 0.50
+			ship_evasion_mult = 0.50
+			ship_fire_rate_mult = 0.50
+			ship_accuracy_mult = 0.50
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_reactor_dot"
+		radius = 100
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_reactor_dot
+			priority = 5
+		}
+		
+		damage_per_day = {
+			accuracy = 1.0
+			damage = { min = 2500 max = 5000 }
+			shield_penetration = 0
+			armor_penetration = 0
+			shield_damage = 1
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+
+	hostile_aura = {
+		name = "acot_aura_herculean_computer_debuff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_debuff
+			priority = 5
+		}
+		
+		modifier = {
+			ship_armor_penetration_mult = -1.0
+			ship_shield_penetration_mult = -1.0
+			ship_weapon_damage = -0.50
+			ship_evasion_mult = -0.50
+			ship_base_speed_mult = -0.50
+			ship_tracking_mult = -0.50
+			ship_accuracy_mult = -0.50
+			ship_weapon_range_mult = -0.50
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "acot_aura_herculean_computer_buff"
+		apply_on = ships
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = acot_aura_herculean_computer_buff
+			priority = 5
+		}
+		
+		modifier = {
+			ship_shield_mult = 0.50
+			ship_armor_mult = 0.50
+			ship_shield_reduction = -1.0
+			ship_armor_reduction = -1.00
+			ship_evasion_mult = 0.50
+			ship_base_speed_mult = 0.50
+			ship_ftl_jumpdrive_range_mult = 2.00
+			ship_tracking_mult = 0.50
+			ship_accuracy_mult = 0.50
+			ship_weapon_range_mult = 0.50
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

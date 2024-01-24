@@ -23,6 +23,7 @@ utility_component_template = {
 		limit = {
 			exists = owner
 			owner = { has_origin = origin_progenitor_hive }
+			NOT = { is_ship_size = precursor_colossus }
 		}
 		modifier = {
 			ship_speed_mult = 0.55
@@ -85,6 +86,7 @@ utility_component_template = {
 		limit = {
 			exists = owner
 			owner = { has_origin = origin_progenitor_hive }
+			NOT = { is_ship_size = precursor_colossus }
 		}
 		modifier = {
 			ship_speed_mult = 0.60
