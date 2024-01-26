@@ -1,0 +1,22 @@
+spriteTypes = {
+	### ESCARGOT
+	spriteType = {
+		name = "GFX_text_acot_ship_escort_icon"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_4.dds"
+	}
+	### BC
+	spriteType = {
+		name = "GFX_text_acot_ship_bc_icon"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_8.dds"
+	}
+	### PAC
+	spriteType = {
+		name = "GFX_text_acot_ship_carrier_icon"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_16.dds"
+	}
+	### HPYERIONS
+	spriteType = {
+		name = "GFX_text_acot_ship_titan_icon"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_16.dds"
+	}
+}

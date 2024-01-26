@@ -525,14 +525,14 @@ ACOT_ARMOR_BOOSTER_SE_OFFSPRING_DESC: "$ACOT_ARMOR_BOOSTER_SE_DESC$"
 
 STARBASE_PRECURSOR_OFFSPRING_OUTLOOK: "$STARBASE_OFFSPRING_OUTLOOK$"
 
-sm_acot_offspring_supply_bay: "offspring $sm_acot_supply_bay$"
+sm_acot_offspring_supply_bay: "Offspring $sm_acot_supply_bay$"
 sm_acot_offspring_supply_bay_desc: "$sm_acot_supply_bay_desc$"
 acot_offspring_supply_bay_tooltip: "$acot_supply_bay_tooltip$"
 
-sm_acot_sigma_offspring_supply_bay: "offspring $sm_acot_sigma_supply_bay$"
+sm_acot_sigma_offspring_supply_bay: "Offspring $sm_acot_sigma_supply_bay$"
 sm_acot_sigma_offspring_supply_bay_desc: "$sm_acot_sigma_supply_bay_desc$"
 acot_sigma_offspring_supply_bay_tooltip: "$acot_sigma_supply_bay_tooltip$"
 
-sm_acot_phanon_offspring_supply_bay: "offspring $sm_acot_phanon_supply_bay$"
+sm_acot_phanon_offspring_supply_bay: "Offspring $sm_acot_phanon_supply_bay$"
 sm_acot_phanon_offspring_supply_bay_desc: "$sm_acot_phanon_supply_bay_desc$"
 acot_phanon_offspring_supply_bay_tooltip: "$acot_phanon_supply_bay_tooltip$"
