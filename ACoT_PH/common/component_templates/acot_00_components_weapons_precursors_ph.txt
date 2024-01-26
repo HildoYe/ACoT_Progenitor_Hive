@@ -1135,7 +1135,7 @@ strike_craft_component_template = {
 	projectile_gfx = "acot_energy_lance_se"
 	power = -2400
 	
-	count = 2
+	count = 4
 	regeneration_per_day = 0.1
 	launch_time = 0.25
 	engagement_range = 350

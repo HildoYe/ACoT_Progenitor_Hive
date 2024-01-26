@@ -6,8 +6,8 @@ offspring_precursor_escort_plural: "Offspring Precursor Escorts"
 offspring_precursor_battlecruiser: "Offspring Precursor Battlecruiser"
 offspring_precursor_battlecruiser_plural: "Offspring Precursor Battlecruisers"
 
-offspring_precursor_titan: "Offspring Precursor Titan"
-offspring_precursor_titan_plural: "Offspring Precursor Titans"
+offspring_precursor_titan: "Offspring $precursor_titan$"
+offspring_precursor_titan_plural: "Offspring $precursor_titan_plural$"
 
 offspring_precursor_assault_carrier: "Offspring Precursor Assault Carrier"
 offspring_precursor_assault_carrier_plural: "Offspring Precursor Assault Carriers"
