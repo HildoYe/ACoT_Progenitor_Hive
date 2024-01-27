@@ -52,30 +52,30 @@ acot_offspring_defense_army_ae_desc: "$offspring_defense_desc$"
 
 ##########
 
-acot_offspring_defense_army_light_1: "Offspring-Led Guardian"
-acot_offspring_defense_army_light_1_plural: "Offspring-Led Guardians"
-acot_offspring_defense_army_light_1_desc: "$offspring_defense_desc$"
+acot_offspring_defense_army_light: "Offspring-Led Guardian"
+acot_offspring_defense_army_light_plural: "Offspring-Led Guardians"
+acot_offspring_defense_army_light_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_light_dm: "Delta $acot_offspring_defense_army_light_1$"
-acot_offspring_defense_army_light_dm_plural: "Delta $acot_offspring_defense_army_light_1_plural$"
+acot_offspring_defense_army_light_dm: "Delta $acot_offspring_defense_army_light$"
+acot_offspring_defense_army_light_dm_plural: "Delta $acot_offspring_defense_army_light_plural$"
 acot_offspring_defense_army_light_dm_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_light_ae: "Alpha $acot_offspring_defense_army_light_1$"
-acot_offspring_defense_army_light_ae_plural: "Alpha $acot_offspring_defense_army_light_1_plural$"
+acot_offspring_defense_army_light_ae: "Alpha $acot_offspring_defense_army_light$"
+acot_offspring_defense_army_light_ae_plural: "Alpha $acot_offspring_defense_army_light_plural$"
 acot_offspring_defense_army_light_ae_desc: "$offspring_defense_desc$"
 
 ##########
 
-acot_offspring_defense_army_heavy_1: "Offspring-Led Royal Guard"
-acot_offspring_defense_army_heavy_1_plural: "Offspring-Led Royal Guards"
-acot_offspring_defense_army_heavy_1_desc: "$offspring_defense_desc$"
+acot_offspring_defense_army_heavy: "Offspring-Led Royal Guard"
+acot_offspring_defense_army_heavy_plural: "Offspring-Led Royal Guards"
+acot_offspring_defense_army_heavy_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_heavy_dm: "Delta $acot_offspring_defense_army_heavy_1$"
-acot_offspring_defense_army_heavy_dm_plural: "Delta $acot_offspring_defense_army_heavy_1_plural$"
+acot_offspring_defense_army_heavy_dm: "Delta $acot_offspring_defense_army_heavy$"
+acot_offspring_defense_army_heavy_dm_plural: "Delta $acot_offspring_defense_army_heavy_plural$"
 acot_offspring_defense_army_heavy_dm_desc: "$offspring_defense_desc$"
 
-acot_offspring_defense_army_heavy_ae: "Alpha $acot_offspring_defense_army_heavy_1$"
-acot_offspring_defense_army_heavy_ae_plural: "Alpha $acot_offspring_defense_army_heavy_1_plural$"
+acot_offspring_defense_army_heavy_ae: "Alpha $acot_offspring_defense_army_heavy$"
+acot_offspring_defense_army_heavy_ae_plural: "Alpha $acot_offspring_defense_army_heavy_plural$"
 acot_offspring_defense_army_heavy_ae_desc: "$offspring_defense_desc$"
 
 ################ DEFENSE FANATIC GUARDIAN
@@ -90,30 +90,30 @@ acot_fanatic_guardian_ae_desc: "$fanatic_guardian_desc$"
 
 ##########
 
-acot_fanatic_guardian_light_1: "Armored Fanatic Guardian"
-acot_fanatic_guardian_light_1_plural: "Armored Fanatic Guardians"
-acot_fanatic_guardian_light_1_desc: "$fanatic_guardian_desc$"
+acot_fanatic_guardian_light: "Armored Fanatic Guardian"
+acot_fanatic_guardian_light_plural: "Armored Fanatic Guardians"
+acot_fanatic_guardian_light_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_light_dm: "Delta $acot_fanatic_guardian_light_1$"
-acot_fanatic_guardian_light_dm_plural: "Delta $acot_fanatic_guardian_light_1_plural$"
+acot_fanatic_guardian_light_dm: "Delta $acot_fanatic_guardian_light$"
+acot_fanatic_guardian_light_dm_plural: "Delta $acot_fanatic_guardian_light_plural$"
 acot_fanatic_guardian_light_dm_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_light_ae: "Alpha $acot_fanatic_guardian_light_1$"
-acot_fanatic_guardian_light_ae_plural: "Alpha $acot_fanatic_guardian_light_1_plural$"
+acot_fanatic_guardian_light_ae: "Alpha $acot_fanatic_guardian_light$"
+acot_fanatic_guardian_light_ae_plural: "Alpha $acot_fanatic_guardian_light_plural$"
 acot_fanatic_guardian_light_ae_desc: "$fanatic_guardian_desc$"
 
 ##########
 
-acot_fanatic_guardian_heavy_1: "Elite Fanatic Guardian"
-acot_fanatic_guardian_heavy_1_plural: "Elite Fanatic Guardians"
-acot_fanatic_guardian_heavy_1_desc: "$fanatic_guardian_desc$"
+acot_fanatic_guardian_heavy: "Elite Fanatic Guardian"
+acot_fanatic_guardian_heavy_plural: "Elite Fanatic Guardians"
+acot_fanatic_guardian_heavy_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_heavy_dm: "Delta $acot_fanatic_guardian_heavy_1$"
-acot_fanatic_guardian_heavy_dm_plural: "Delta $acot_fanatic_guardian_heavy_1_plural$"
+acot_fanatic_guardian_heavy_dm: "Delta $acot_fanatic_guardian_heavy$"
+acot_fanatic_guardian_heavy_dm_plural: "Delta $acot_fanatic_guardian_heavy_plural$"
 acot_fanatic_guardian_heavy_dm_desc: "$fanatic_guardian_desc$"
 
-acot_fanatic_guardian_heavy_ae: "Alpha $acot_fanatic_guardian_heavy_1$"
-acot_fanatic_guardian_heavy_ae_plural: "Alpha $acot_fanatic_guardian_heavy_1_plural$"
+acot_fanatic_guardian_heavy_ae: "Alpha $acot_fanatic_guardian_heavy$"
+acot_fanatic_guardian_heavy_ae_plural: "Alpha $acot_fanatic_guardian_heavy_plural$"
 acot_fanatic_guardian_heavy_ae_desc: "$fanatic_guardian_desc$"
 
 ################ DEFENSE MACHINE FANATIC GUARDIAN
@@ -128,30 +128,30 @@ acot_machine_fanatic_guardian_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##########
 
-acot_machine_fanatic_guardian_light_1: "Matrix Sentinel Unit"
-acot_machine_fanatic_guardian_light_1_plural: "Matrix Sentinel Units"
-acot_machine_fanatic_guardian_light_1_desc: "$machine_fanatic_guardian_desc$"
+acot_machine_fanatic_guardian_light: "Matrix Sentinel Unit"
+acot_machine_fanatic_guardian_light_plural: "Matrix Sentinel Units"
+acot_machine_fanatic_guardian_light_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_light_dm: "Delta $acot_machine_fanatic_guardian_light_1$"
-acot_machine_fanatic_guardian_light_dm_plural: "Delta $acot_machine_fanatic_guardian_light_1_plural$"
+acot_machine_fanatic_guardian_light_dm: "Delta $acot_machine_fanatic_guardian_light$"
+acot_machine_fanatic_guardian_light_dm_plural: "Delta $acot_machine_fanatic_guardian_light_plural$"
 acot_machine_fanatic_guardian_light_dm_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_light_ae: "Alpha $acot_machine_fanatic_guardian_light_1$"
-acot_machine_fanatic_guardian_light_ae_plural: "Alpha $acot_machine_fanatic_guardian_light_1_plural$"
+acot_machine_fanatic_guardian_light_ae: "Alpha $acot_machine_fanatic_guardian_light$"
+acot_machine_fanatic_guardian_light_ae_plural: "Alpha $acot_machine_fanatic_guardian_light_plural$"
 acot_machine_fanatic_guardian_light_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##########
 
-acot_machine_fanatic_guardian_heavy_1: "Matrix Core Unit"
-acot_machine_fanatic_guardian_heavy_1_plural: "Matrix Core Units"
-acot_machine_fanatic_guardian_heavy_1_desc: "$machine_fanatic_guardian_desc$"
+acot_machine_fanatic_guardian_heavy: "Matrix Core Unit"
+acot_machine_fanatic_guardian_heavy_plural: "Matrix Core Units"
+acot_machine_fanatic_guardian_heavy_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_heavy_dm: "Delta $acot_machine_fanatic_guardian_heavy_1$"
-acot_machine_fanatic_guardian_heavy_dm_plural: "Delta $acot_machine_fanatic_guardian_heavy_1_plural$"
+acot_machine_fanatic_guardian_heavy_dm: "Delta $acot_machine_fanatic_guardian_heavy$"
+acot_machine_fanatic_guardian_heavy_dm_plural: "Delta $acot_machine_fanatic_guardian_heavy_plural$"
 acot_machine_fanatic_guardian_heavy_dm_desc: "$machine_fanatic_guardian_desc$"
 
-acot_machine_fanatic_guardian_heavy_ae: "Alpha $acot_machine_fanatic_guardian_heavy_1$"
-acot_machine_fanatic_guardian_heavy_ae_plural: "Alpha $acot_machine_fanatic_guardian_heavy_1_plural$"
+acot_machine_fanatic_guardian_heavy_ae: "Alpha $acot_machine_fanatic_guardian_heavy$"
+acot_machine_fanatic_guardian_heavy_ae_plural: "Alpha $acot_machine_fanatic_guardian_heavy_plural$"
 acot_machine_fanatic_guardian_heavy_ae_desc: "$machine_fanatic_guardian_desc$"
 
 ##################################################################################################
