@@ -115,20 +115,12 @@ offspring_precursor_escort = {
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	is_designable = yes
-	enable_default_design = yes
+	enable_default_design = no
 	can_have_federation_design = no
 	is_space_object = yes
 
 	potential_construction = {
-		OR =  {
-			can_build_precursor_ship = yes
-		}
-	}
-
-	possible_construction = {
-		OR =  {
-			can_build_precursor_ship = yes
-		}
+		can_build_precursor_ship = yes
 	}
 
 	prerequisites = {
@@ -236,19 +228,11 @@ offspring_precursor_battlecruiser = {
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	is_designable = yes
-	enable_default_design = yes
+	enable_default_design = no
 	can_have_federation_design = no
 	
 	potential_construction = {
-		OR =  {
-			can_build_precursor_ship = yes
-		}
-	}
-
-	possible_construction = {
-		OR =  {
-			can_build_precursor_ship = yes
-		}
+		can_build_precursor_ship = yes
 	}
 
 	ai_ship_data = {
@@ -321,14 +305,10 @@ offspring_precursor_titan = {
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	is_designable = yes
-	enable_default_design = yes
+	enable_default_design = no
 	can_have_federation_design = no
 	
 	potential_construction = {
-		can_build_precursor_ship = yes
-	}
-
-	possible_construction = {
 		can_build_precursor_ship = yes
 	}
 
@@ -423,14 +403,10 @@ offspring_precursor_assault_carrier = {
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	is_designable = yes
-	enable_default_design = yes
+	enable_default_design = no
 	can_have_federation_design = no
 	
 	potential_construction = {
-		can_build_precursor_ship = yes
-	}
-
-	possible_construction = {
 		can_build_precursor_ship = yes
 	}
 	
