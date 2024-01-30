@@ -31,7 +31,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -39,7 +39,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -109,7 +109,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -117,7 +117,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -179,7 +179,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -187,7 +187,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -257,7 +257,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -265,7 +265,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -332,7 +332,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -340,7 +340,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -409,7 +409,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -417,7 +417,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -485,7 +485,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -493,7 +493,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
@@ -560,7 +560,7 @@ weapon_component_template = {
 		offspring_battleship = 2
 		precursor_battlecruiser = 2
 		offspring_precursor_battlecruiser = 2
-		fallen_empire_large_warship = 2
+		large_ship_fallen_empire = 2
 
 		titan = 3
 		juggernaut = 3
@@ -568,7 +568,7 @@ weapon_component_template = {
 		offspring_precursor_assault_carrier = 3
 		precursor_titan = 3
 		offspring_precursor_titan = 3
-		fallen_empire_massive_warship = 3
+		massive_ship_fallen_empire = 3
 	}
 
 	resources = {
