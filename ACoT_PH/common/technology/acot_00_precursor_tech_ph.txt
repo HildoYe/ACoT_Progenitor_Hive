@@ -1,3 +1,167 @@
+### MILITARY SHIP ###
+
+tech_precursor_escort = {
+	area = engineering
+	cost = @acot_tier7cost2
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	icon = tech_precursor_escort_delta
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_PRECURSOR_ESCORT_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_PRECURSOR_ESCORT_CONSTRUCTION_DESC"
+		}
+	}
+	
+	prerequisites = {
+		tech_precursor_design
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_bc = {
+	area = engineering
+	cost = @acot_tier7cost2
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	icon = tech_precursor_bc_delta
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_PRECURSOR_BATTLECRUISER_CONSTRUCTION_DESC"
+		}
+	}
+
+	prerequisites = {
+		tech_precursor_design
+	}
+	
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_assault_carrier = {
+	area = engineering
+	cost = @acot_tier7cost3
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_DESC"
+		}
+	}
+	
+	prerequisites = {
+		tech_precursor_design
+	}
+
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_precursor_titan = {
+	area = engineering
+	cost = @acot_tier7cost3
+	tier = 7
+	is_rare = yes
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	
+	weight_modifier = {
+		factor = 0
+	}
+	
+	potential = {
+		NOT = {
+			is_country_type = fallen_empire		
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_PRECURSOR_TITAN_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_PRECURSOR_TITAN_CONSTRUCTION_DESC"
+		}
+	}
+
+	prerequisites = {
+		tech_precursor_design
+	}
+
+	ai_weight = {
+		factor = 5		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
 ###DELTA####
 
 tech_precursor_escort_delta = {

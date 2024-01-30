@@ -1,16 +1,16 @@
 ﻿l_spanish:
 
-offspring_precursor_escort: "Offspring Precursor Escort"
-offspring_precursor_escort_plural: "Offspring Precursor Escorts"
+offspring_precursor_escort: "Offspring $precursor_escort$"
+offspring_precursor_escort_plural: "Offspring $precursor_escort_plural$"
 
-offspring_precursor_battlecruiser: "Offspring Precursor Battlecruiser"
-offspring_precursor_battlecruiser_plural: "Offspring Precursor Battlecruisers"
+offspring_precursor_battlecruiser: "Offspring $precursor_battlecruiser$"
+offspring_precursor_battlecruiser_plural: "Offspring $precursor_battlecruiser_plural$"
 
 offspring_precursor_titan: "Offspring $precursor_titan$"
 offspring_precursor_titan_plural: "Offspring $precursor_titan_plural$"
 
-offspring_precursor_assault_carrier: "Offspring Precursor Assault Carrier"
-offspring_precursor_assault_carrier_plural: "Offspring Precursor Assault Carriers"
+offspring_precursor_assault_carrier: "Offspring $precursor_assault_carrier$"
+offspring_precursor_assault_carrier_plural: "Offspring $precursor_assault_carrier_plural$"
 
 mod_shipsize_offspring_precursor_escort_hull_add: "Offspring $mod_shipsize_precursor_escort_hull_add$"
 mod_shipsize_offspring_precursor_battlecruiser_hull_add: "Offspring $mod_shipsize_precursor_battlecruiser_hull_add$"
@@ -26,6 +26,23 @@ job_acot_offspring: "Offspring Broodmother"
 job_acot_offspring_plural: "Offspring Broodmothers"
 job_acot_offspring_desc: "Offspring Broodmothers provide necessary care and tending to the spawns of the future."
 mod_job_acot_offspring_add: "$job_acot_offspring$"
+
+TECH_UNLOCK_PRECURSOR_ESCORT_CONSTRUCTION_TITLE: "[Owner.GetPrecursorEscortTechTitle]"
+TECH_UNLOCK_REGULAR_PRECURSOR_ESCORT_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_escort$"
+TECH_UNLOCK_OFFSPRING_PRECURSOR_ESCORT_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_escort$\n§HUnlocks Ship Type:§! $offspring_precursor_escort$ §Eafter researching all Delta Tier core components.§!"
+TECH_UNLOCK_PRECURSOR_ESCORT_CONSTRUCTION_DESC: "$tech_precursor_escort_desc$"
+TECH_UNLOCK_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE: "[Owner.GetPrecursorBattlecruiserTechTitle]"
+TECH_UNLOCK_REGULAR_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_battlecruiser$"
+TECH_UNLOCK_OFFSPRING_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_battlecruiser$\n§HUnlocks Ship Type:§! $offspring_precursor_battlecruiser$ §Eafter researching all Delta Tier core components.§!"
+TECH_UNLOCK_PRECURSOR_BATTLECRUISER_CONSTRUCTION_DESC: "$tech_precursor_bc_desc$"
+TECH_UNLOCK_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE: "[Owner.GetPrecursorAssaultCarrierTechTitle]"
+TECH_UNLOCK_REGULAR_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_assault_carrier$"
+TECH_UNLOCK_OFFSPRING_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_assault_carrier$\n§HUnlocks Ship Type:§! $offspring_precursor_assault_carrier$ §Eafter researching all Delta Tier core components.§!"
+TECH_UNLOCK_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_DESC: "$tech_precursor_assault_carrier_desc$"
+TECH_UNLOCK_PRECURSOR_TITAN_CONSTRUCTION_TITLE: "[Owner.GetPrecursorTitanTechTitle]"
+TECH_UNLOCK_REGULAR_PRECURSOR_TITAN_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_titan$"
+TECH_UNLOCK_OFFSPRING_PRECURSOR_TITAN_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! $precursor_titan$\n§HUnlocks Ship Type:§! $offspring_precursor_titan$ §Eafter researching all Delta Tier core components.§!"
+TECH_UNLOCK_PRECURSOR_TITAN_CONSTRUCTION_DESC: "$tech_precursor_titan_desc$"
 
 tech_precursor_escort_hull_effect: "$mod_shipsize_precursor_escort_hull_add$:§G+750§!" 
 tech_precursor_escort_build_speed_effect: "$mod_shipsize_precursor_escort_build_speed_mult$:§G+25%§!\n$mod_shipsize_precursor_escort_hull_add$:§G+2000§!"

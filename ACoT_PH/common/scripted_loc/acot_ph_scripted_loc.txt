@@ -1,0 +1,43 @@
+defined_text = {
+	name = GetPrecursorEscortTechTitle
+	text = {
+		trigger = {
+			has_origin = origin_progenitor_hive
+		}
+		localization_key = TECH_UNLOCK_OFFSPRING_PRECURSOR_ESCORT_CONSTRUCTION_TITLE
+	}
+	default = TECH_UNLOCK_REGULAR_PRECURSOR_ESCORT_CONSTRUCTION_TITLE
+}
+
+defined_text = {
+	name = GetPrecursorBattlecruiserTechTitle
+	text = {
+		trigger = {
+			has_origin = origin_progenitor_hive
+		}
+		localization_key = TECH_UNLOCK_OFFSPRING_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE
+	}
+	default = TECH_UNLOCK_REGULAR_PRECURSOR_BATTLECRUISER_CONSTRUCTION_TITLE
+}
+
+defined_text = {
+	name = GetPrecursorAssaultCarrierTechTitle
+	text = {
+		trigger = {
+			has_origin = origin_progenitor_hive
+		}
+		localization_key = TECH_UNLOCK_OFFSPRING_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE
+	}
+	default = TECH_UNLOCK_REGULAR_PRECURSOR_ASSAULT_CARRIER_CONSTRUCTION_TITLE
+}
+
+defined_text = {
+	name = GetPrecursorTitanTechTitle
+	text = {
+		trigger = {
+			has_origin = origin_progenitor_hive
+		}
+		localization_key = TECH_UNLOCK_OFFSPRING_PRECURSOR_TITAN_CONSTRUCTION_TITLE
+	}
+	default = TECH_UNLOCK_REGULAR_PRECURSOR_TITAN_CONSTRUCTION_TITLE
+}

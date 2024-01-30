@@ -1,3 +1,166 @@
+tech_dark_matter_power_core_dm = {
+	area = physics
+	category = { particles }
+	tier = 6
+	cost = @acot_tier6cost1
+	weight = 0
+	ai_update_type = all
+	is_reverse_engineerable = no
+	is_rare = yes
+	
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOT = { has_global_flag = acot_delta_forbidden }
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" tech_mine_dark_energy }
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		hide_prereq_for_desc = ship
+		custom = {
+			title = "TECH_UNLOCK_DARK_MATTER_POWER_DM_TITLE"
+			desc = "TECH_UNLOCK_DARK_MATTER_POWER_DM_DESC"
+		}
+	}
+	
+}
+
+tech_enigmatic_drive_dm = {
+	cost = @acot_tier6cost1
+	tier = 6
+	area = physics
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	weight = 15
+	prerequisites = { "tech_dark_matter_power_core_dm" }
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = ship
+		component = {
+			title = "TECH_UNLOCK_ENIG_DRIVE_DM"
+			desc = "TECH_UNLOCK_ENIG_DRIVE_DM_DESC"
+		}
+	}	
+
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOT = { has_global_flag = acot_delta_forbidden }
+	}
+	
+	weight_modifier = {
+		factor = 0.75
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}
+	
+	ai_weight = {
+		factor = 20 #FTL techs are good
+	}
+}
+
+tech_thrusters_dm = {
+	area = engineering
+	category = { propulsion }
+	cost = @acot_tier6cost1
+	tier = 6
+	weight = @tier5weight2
+	ai_update_type = all
+	is_reverse_engineerable = no
+
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOT = { has_global_flag = acot_delta_forbidden }
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" tech_dark_matter_power_core_dm }
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		hide_prereq_for_desc = ship
+		custom = {
+			title = "TECH_UNLOCK_DM_THRUSTER_TITLE"
+			desc = "TECH_UNLOCK_DM_THRUSTER_DESC"
+		}
+	}
+	
+}
+
+tech_sensors_dm = {
+	area = physics
+	cost = @acot_tier6cost1
+	tier = 6
+	category = { computing }
+	ai_update_type = all	
+	prerequisites = { "tech_sensors_4" "tech_dark_matter_power_core_dm" }
+	weight = @tier5weight1
+	is_reverse_engineerable = no
+	
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOT = { has_global_flag = acot_delta_forbidden }
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.25 #good component
+	}
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = ship
+		component = {
+			title = "TECH_UNLOCK_DM_SENSOR_TITLE"
+			desc = "TECH_UNLOCK_DM_SENSOR_DESC"
+		}
+	}
+}
+
+tech_dm_combat_computer = {
+	area = physics
+	cost = @acot_tier6cost1
+	tier = 6
+	category = { computing }
+	ai_update_type = all	
+	prerequisites = { "tech_dark_matter_power_core_dm" }
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+
+	potential = {
+		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOT = { has_global_flag = acot_delta_forbidden }
+	}
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.25 #good component
+	}
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		hide_prereq_for_desc = ship
+		custom = {
+			title = "TECH_UNLOCK_DELTA_COMPUTER_TITLE"
+			desc = "TECH_UNLOCK_DELTA_COMPUTER_DESC"
+		}
+	}
+}
+
 # Dark Matter Drone
 tech_darkmatter_reactive_drone_dm = {
 	area = engineering
