@@ -53,6 +53,8 @@ tech_precursor_titan_build_speed_effect: "$mod_shipsize_precursor_titan_build_sp
 tech_precursor_assault_carrier_hull_effect: "$mod_shipsize_precursor_assault_carrier_hull_add$:§G+3000§!"
 tech_precursor_assault_carrier_build_speed_effect: "$mod_shipsize_precursor_assault_carrier_build_speed_mult$:§G+25%§!\n$mod_shipsize_precursor_assault_carrier_hull_add$:§G+25000§!"
 
+tech_stelar_advanced_ships_modifier_desc: "$mod_shipsize_corvette_hull_add$:§G+600§!\n$mod_shipsize_destroyer_hull_add$:§G+1800§!\n$mod_shipsize_cruiser_hull_add$:§G+3600§!\n$mod_shipsize_battleship_hull_add$:§G+6000§!\n$mod_shipsize_titan_hull_add$:§G+20000§!\n$mod_shipsize_juggernaut_hull_add$:§G+200000§!"
+
 SHIP_AURA_OFFSPRING_PRECURSOR: "$SHIP_AURA_OFFSPRING$"
 ship_offspring_aura_components: "$ship_aura_components$"
 ship_offspring_aura_components_DESC: "$ship_aura_components_DESC$"
