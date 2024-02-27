@@ -22,7 +22,7 @@ utility_component_template = {
 			NOT = { is_ship_size = precursor_colossus }
 		}
 		modifier = {
-			ship_speed_mult = 0.65
+			ship_military_speed_mult = 0.65
 			ship_evasion_mult = 0.65
 			ship_fire_rate_mult = 0.65
 			ship_accuracy_mult = 0.65
@@ -61,7 +61,7 @@ utility_component_template = {
 			NOT = { is_ship_size = precursor_colossus }
 		}
 		modifier = {
-			ship_speed_mult = 0.70
+			ship_military_speed_mult = 0.70
 			ship_evasion_mult = 0.70
 			ship_fire_rate_mult = 0.70
 			ship_accuracy_mult = 0.70
